@@ -1,0 +1,8 @@
+{
+    "result": null,
+    "header": {
+        "message": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.aegon.kkb.findeks.rest.model.ServiceResponse<com.aegon.kkb.findeks.model.KKBFindeksResponse>> com.aegon.kkb.findeks.controller.KKBFindeksController.verify(com.aegon.kkb.findeks.model.KKBFindeksRequest): [Field error in object 'KKBFindeksRequest' on field 'platformId': rejected value [0]; codes [Min.KKBFindeksRequest.platformId,Min.platformId,Min.java.lang.Integer,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [KKBFindeksRequest.platformId,platformId]; arguments []; default message [platformId],1]; default message [must be greater than or equal to 1]] ",
+        "statusCode": 500,
+        "detailCode": "-1"
+    }
+}

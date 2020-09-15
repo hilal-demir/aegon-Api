@@ -1,0 +1,11 @@
+{
+    "data": null,
+    "header": {
+        "message": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.aegon.cnf.support.rest.dto.ServiceResponse<com.aegon.customer.address.model.CustomerAddressResponse>> com.aegon.customer.address.controller.CustomerAddressController.getCustomerAddress(com.aegon.customer.address.model.CustomerAddressRequest): [Field error in object 'customerAddressRequest' on field 'tcId': rejected value []; codes [Digits.customerAddressRequest.tcId,Digits.tcId,Digits.java.lang.String,Digits]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [customerAddressRequest.tcId,tcId]; arguments []; default message [tcId],0,11]; default message [TC Id need to have only 11 characters]] ",
+        "status": "FAILURE",
+        "statusCode": 500,
+        "detailCode": "-1",
+        "txId": null,
+        "info": []
+    }
+}

@@ -1,0 +1,47 @@
+2020-09-04 19:35:17 INFO  Reflections:232 scan - Reflections took 3502 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:35:18 INFO  Reflections:17 beforeScenario - log deneme
+2020-09-04 19:35:18 INFO  BaseTest:18 beforeScenario - log deneme
+2020-09-04 19:35:18 INFO  BaseTest:19 beforeScenario - log deneme
+2020-09-04 19:35:18 INFO  BaseTest:20 beforeScenario - log deneme
+2020-09-04 19:35:18 INFO  BaseTest:21 beforeScenario - log deneme
+2020-09-04 19:35:18 INFO  BaseTest:22 beforeScenario - log deneme
+2020-09-04 19:35:18 INFO  BaseTest:23 beforeScenario - log deneme
+2020-09-04 19:36:09 INFO  Reflections:232 scan - Reflections took 3667 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:36:09 INFO  BaseTest:17 beforeScenario - log deneme
+2020-09-04 19:36:09 INFO  BaseTest:18 beforeScenario - log deneme
+2020-09-04 19:36:09 INFO  BaseTest:19 beforeScenario - log deneme
+2020-09-04 19:36:09 INFO  BaseTest:20 beforeScenario - log deneme
+2020-09-04 19:36:09 INFO  BaseTest:21 beforeScenario - log deneme
+2020-09-04 19:36:09 INFO  BaseTest:22 beforeScenario - log deneme
+2020-09-04 19:36:52 INFO  Reflections:232 scan - Reflections took 3481 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:36:52 INFO  BaseTest:17 beforeScenario - log deneme
+2020-09-04 19:37:13 INFO  Reflections:232 scan - Reflections took 3616 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:37:13 INFO  BaseTest:18 beforeScenario - log deneme
+2020-09-04 19:37:52 INFO  Reflections:232 scan - Reflections took 4573 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:37:53 INFO  BaseTest:17 beforeScenario - log deneme
+2020-09-04 19:39:15 INFO  Reflections:232 scan - Reflections took 3480 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:39:16 INFO  BaseTest:17 beforeScenario - log deneme
+2020-09-04 19:40:26 INFO  Reflections:232 scan - Reflections took 3549 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:40:26 INFO  BaseTest:17 beforeScenario - log deneme
+2020-09-04 19:42:09 INFO  Reflections:232 scan - Reflections took 3641 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:42:10 INFO  BaseTest:17 beforeScenario - log deneme
+2020-09-04 19:42:26 INFO  Reflections:232 scan - Reflections took 3545 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:42:27 INFO  BaseTest:17 beforeScenario - log deneme
+2020-09-04 19:42:42 INFO  Reflections:232 scan - Reflections took 3578 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:42:43 INFO  BaseTest:17 beforeScenario - log deneme
+2020-09-04 19:42:54 INFO  Reflections:232 scan - Reflections took 3553 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:42:55 INFO  BaseTest:17 beforeScenario - log deneme
+2020-09-04 19:43:08 INFO  Reflections:232 scan - Reflections took 3553 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:43:09 INFO  BaseTest:17 beforeScenario - log deneme
+2020-09-04 19:43:50 INFO  Reflections:232 scan - Reflections took 3450 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:43:51 INFO  BaseTest:17 beforeScenario - log deneme
+2020-09-04 19:44:08 INFO  Reflections:232 scan - Reflections took 3741 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:44:09 INFO  BaseTest:17 beforeScenario - log deneme
+2020-09-04 19:45:06 INFO  Reflections:232 scan - Reflections took 3574 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:45:07 INFO  BaseTest:17 beforeScenario - log deneme
+2020-09-04 19:45:42 INFO  Reflections:232 scan - Reflections took 3608 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:45:43 INFO  BaseTest:17 beforeScenario - log deneme
+2020-09-04 19:46:06 INFO  Reflections:232 scan - Reflections took 3600 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:46:07 INFO  BaseTest:17 beforeScenario - log deneme
+2020-09-04 19:46:21 INFO  Reflections:232 scan - Reflections took 3479 ms to scan 62 urls, producing 10452 keys and 55938 values 
+2020-09-04 19:46:21 INFO  BaseTest:17 beforeScenario - log deneme

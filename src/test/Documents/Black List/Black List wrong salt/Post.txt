@@ -1,0 +1,22 @@
+{
+  "birthDate": "1970-10-25",
+  "citizenId": 1726655,
+  "gender": "E",
+  "name": "EREN ÇELİK",
+  "salt": "Ga",
+  "email": "eren.celik@aegon.com.tr",
+  "occupation": "YAZILIM MÜHENDISIr",
+  "phoneNumber": "5551234567",
+  "address": {
+        "city": "İSTANBUL",
+        "country": "TÜRKİYE",
+        "description": "K2 PLAZA",
+        "district": "KADIKÖY",
+        "neighborhood": "KOZYATAĞI MAH."
+    },
+  "birthPlace": {
+        "city": "ANKARAa",
+        "country": "TÜRKİYE",
+        "district": "ÇANKAYA"
+    }
+}

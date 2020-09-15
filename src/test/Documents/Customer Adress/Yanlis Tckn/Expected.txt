@@ -1,0 +1,11 @@
+{
+    "data": null,
+    "header": {
+        "message": "Server was unable to process request. ---> The remote server returned an error: (500) Internal Server Error.",
+        "status": "FAILURE",
+        "statusCode": 500,
+        "detailCode": "-1",
+        "txId": null,
+        "info": []
+    }
+}

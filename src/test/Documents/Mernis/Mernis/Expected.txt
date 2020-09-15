@@ -1,0 +1,9 @@
+{
+    "data": null,
+    "header": {
+        "message": "HTTP transport error: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target",
+        "statusCode": 500,
+        "detailCode": "-1",
+        "status": "FAILURE"
+    }
+}

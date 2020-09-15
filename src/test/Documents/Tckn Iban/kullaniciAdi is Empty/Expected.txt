@@ -1,0 +1,8 @@
+{
+    "result": null,
+    "header": {
+        "message": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.aegon.kkb.findeks.rest.model.ServiceResponse<com.aegon.kkb.findeks.model.KKBFindeksResponse>> com.aegon.kkb.findeks.controller.KKBFindeksController.verify(com.aegon.kkb.findeks.model.KKBFindeksRequest): [Field error in object 'KKBFindeksRequest' on field 'kullaniciAdi': rejected value []; codes [NotBlank.KKBFindeksRequest.kullaniciAdi,NotBlank.kullaniciAdi,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [KKBFindeksRequest.kullaniciAdi,kullaniciAdi]; arguments []; default message [kullaniciAdi]]; default message [Kullanici Adi boş olamaz]] ",
+        "statusCode": 500,
+        "detailCode": "-1"
+    }
+}

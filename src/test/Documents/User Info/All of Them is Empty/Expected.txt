@@ -1,0 +1,8 @@
+{
+    "data": null,
+    "header": {
+        "message": "Kullanıcı adı veya partaj bilgisi gereklidir",
+        "statusCode": 200,
+        "detailCode": "Kullanıcı adı veya partaj bilgisi gereklidir"
+    }
+}

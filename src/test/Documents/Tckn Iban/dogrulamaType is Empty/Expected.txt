@@ -1,0 +1,8 @@
+{
+    "result": null,
+    "header": {
+        "message": "JSON parse error: Cannot deserialize value of type `com.aegon.kkb.findeks.model.KKBFindeksDogrulamaType` from String \"\": not one of the values accepted for Enum class: [KIMLIK_GSM, KART_GSM, KIMLIK_IBAN, KART_KIMLIK]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `com.aegon.kkb.findeks.model.KKBFindeksDogrulamaType` from String \"\": not one of the values accepted for Enum class: [KIMLIK_GSM, KART_GSM, KIMLIK_IBAN, KART_KIMLIK]\n at [Source: (PushbackInputStream); line: 2, column: 20] (through reference chain: com.aegon.kkb.findeks.model.KKBFindeksRequest[\"dogrulamaType\"])",
+        "statusCode": 500,
+        "detailCode": "-1"
+    }
+}

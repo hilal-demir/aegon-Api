@@ -1,0 +1,35 @@
+{
+    "data": {
+        "acikAdres": "KÜÇÜKBAKKALKÖY MAH. GÜL AĞACI SK.  NO: 18  İÇ KAPI NO: 3 ATAŞEHİR / İSTANBUL",
+        "adresNo": "2273558870",
+        "adresTipi": "IlIlceMerkeziAdresi",
+        "binaAda": "1909",
+        "binaBlokAdi": null,
+        "binaKodu": "28473062",
+        "binaParsel": "4",
+        "binaSiteAdi": null,
+        "csbm": "GÜL AĞACI SK.",
+        "csbmKodu": "204468",
+        "disKapiNo": "18",
+        "icKapiNo": "3",
+        "ilAd": "İSTANBUL",
+        "ilKodu": "034",
+        "ilceAd": "ATAŞEHİR",
+        "ilceKodu": "034038",
+        "kimlikNo": "17222447278",
+        "kpsdenSorgulanmaTarihi": "2020-06-06T12:12:42+03:00",
+        "mahalle": "KÜÇÜKBAKKALKÖY MAH.",
+        "mahalleKodu": "40531",
+        "mernisIlKodu": "34",
+        "mernisIlceKodu": "2049",
+        "veriKonum": "sbm"
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": []
+    }
+}
