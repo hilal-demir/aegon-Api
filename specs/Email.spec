@@ -8,10 +8,12 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 Email
 ----------------
 tags:Email
+
 *Email "Email"
 
 Email toMail is Empty
 ----------------
 tags:EmailToMailIsEmpty
+
 *Email "toMail is Empty"
 
