@@ -1,0 +1,8 @@
+<testsuites>
+	<testsuite id="1" tests="1" failures="0" package="/Users/sahabt/Desktop/Automation/turkcell-new/turkcellfix/specs/FonksiyonelErisimTestleri/FonksiyonelErisimTestleri.spec" time="265.500" timestamp="2020-08-12T12:56:47" name="Specification Heading" errors="0" hostname="testinismbpbars">
+		<properties></properties>
+		<testcase classname="Specification Heading" name="FonksiyonelTestlerinSeriOlarakYapilmasi" time="265.500"></testcase>
+		<system-out></system-out>
+		<system-err></system-err>
+	</testsuite>
+</testsuites>
