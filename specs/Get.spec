@@ -7,6 +7,8 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
      
 AEGON-CURRENCY
 ----------------
+tags:AEGONCURRENCY
+
 *Currency
 
 Moreum
