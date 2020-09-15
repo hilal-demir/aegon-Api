@@ -10,7 +10,7 @@ public class txtEditor {
         String data="";
         String post="";
         try {
-            File myObj = new File("src/test/Documents/"+scenarioName+"/"+scenarioType+"/post.txt");
+            File myObj = new File("aegon-Api/src/test/Documents/"+scenarioName+"/"+scenarioType+"/post.txt");
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                  data = myReader.nextLine();
