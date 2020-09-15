@@ -10,7 +10,7 @@ public class txtEditor {
         String data="";
         String post="";
         try {
-            File myObj = new File("r/Testinium/aegon-Api/src/test/Documents/"+scenarioName+"/"+scenarioType+"/post.txt");
+            File myObj = new File("aegontest/src/test/Documents/"+scenarioName+"/"+scenarioType+"/post.txt");
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                  data = myReader.nextLine();
@@ -29,7 +29,7 @@ public class txtEditor {
         String data="";
         String post="";
         try {
-            File myObj = new File("r/Testinium/aegon-Api/src/test/Documents/"+scenarioName+"/"+scenarioType+"/expected.txt");
+            File myObj = new File("aegontest/src/test/Documents/"+scenarioName+"/"+scenarioType+"/expected.txt");
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 data = myReader.nextLine();
