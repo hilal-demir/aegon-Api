@@ -58,6 +58,7 @@ public class BaseTest {
                 break;
             }
             System.out.println(postChanges[i][0]+"="+postChanges[i][1]);
+            i++;
         }
     }
 
@@ -85,6 +86,7 @@ public class BaseTest {
                 break;
             }
             System.out.println(expectedChanges[i][0]+"="+expectedChanges[i][1]);
+            i++;
         }
     }
 
