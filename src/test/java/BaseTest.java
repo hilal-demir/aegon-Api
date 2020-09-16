@@ -1,24 +1,20 @@
-import com.github.openjson.JSONException;
-import com.github.openjson.JSONObject;
-import com.google.api.client.json.Json;
-import com.google.appengine.repackaged.com.google.gson.Gson;
+
 import com.thoughtworks.gauge.BeforeScenario;
 import com.thoughtworks.gauge.ExecutionContext;
-import jdk.nashorn.internal.parser.JSONParser;
 import org.apache.commons.lang3.StringUtils;
-import org.skyscreamer.jsonassert.JSONCompare;
-import org.skyscreamer.jsonassert.JSONCompareMode;
-import org.skyscreamer.jsonassert.JSONCompareResult;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.ArrayList;
 
 
 public class BaseTest {
+
+    public String[][] postChanges=new String[100][100];
     private Logger logger = LoggerFactory.getLogger(getClass());
     public static String scenarioName;
+
     @BeforeScenario
     public void beforeScenario(ExecutionContext executionContext){
         scenarioName=executionContext.getCurrentScenario().getName();
@@ -30,8 +26,26 @@ public class BaseTest {
             logger.info("local koşum");
         } else {
             logger.info("Testinium üzerinden koşum");
-            String test= System.getenv().toString();
-            System.out.println(test+"----------------------------------");
+            logger.info("Testinium üzerinden değişiklikler çekikiliyor.");
+            String[] changesNames= System.getenv("Changes").split(",");
+            for (int i=0; i<changesNames.length;i++){
+                postChanges[i][1]=System.getenv(changesNames[i]);
+                postChanges[i][0]=changesNames[i];
+
+            }
+            int i=0;
+            while (true){
+                if(postChanges[i][0].isEmpty()){
+                    break;
+                }
+                System.out.println("--------------------------------");
+                System.out.println(postChanges[i][0]+"="+postChanges[i][1]);
+                if(i>10){
+                    System.out.println("i 10 u geçti bu durmuyor");
+                    break;
+                }
+            }
+
         }
         }
 
