@@ -7,7 +7,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
      
 Tckn Iban Sorgulama Yanlış Iban
 ----------------
-tags:Tckn Iban Sorgulama Yanlış Iban
+tags:Tckn Iban Sorgulama Yanlis Iban
 
 * Tckn Iban "Yanlis Iban"
 
