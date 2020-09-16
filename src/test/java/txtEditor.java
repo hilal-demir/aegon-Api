@@ -30,6 +30,7 @@ public class txtEditor {
             Assert.fail(filePath+" dosyası bulunamadı "+e);
 
         }
+        System.out.println("dosya bulundu =" +post);
 //        try {
 //            File myObj = new File(filePath);
 //            Scanner myReader = new Scanner(myObj);
@@ -63,6 +64,7 @@ public class txtEditor {
         } catch (IOException e) {
             Assert.fail(filePath+" dosyası bulunamadı "+e);
         }
+        System.out.println("dosya bulundu =" +post);
 
 //        try {
 //            File myObj = new File(filePath);
