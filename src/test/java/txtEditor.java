@@ -17,7 +17,7 @@ public class txtEditor {
 
         String data="";
         String post="";
-        Path filePath= Paths.get("./target/test-classes/Documents/"+scenarioName+"/"+scenarioType+"/post.txt");
+        Path filePath= Paths.get("./target/test-classes/Documents/"+scenarioName+"/"+scenarioType+"/Post.txt");
 
 //        System.out.println(filePath+" dosyasına bakılacak");
 //        String fileName = filePath;
@@ -77,7 +77,7 @@ public class txtEditor {
     public String getExpected(String scenarioName,String scenarioType){
         String data="";
         String post="";
-        String filePath="./target/test-classes/Documents/"+scenarioName+"/"+scenarioType+"/expected.txt";
+        String filePath="./target/test-classes/Documents/"+scenarioName+"/"+scenarioType+"/Expected.txt";
 
 //
 //        String fileName = filePath;
