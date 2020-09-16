@@ -7,16 +7,24 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
      
 Tckn Iban Sorgulama Yanlış Iban
 ----------------
+tags:Tckn Iban Sorgulama Yanlış Iban
+
 * Tckn Iban "Yanlis Iban"
 
 Tckn Iban dogrulamaType is Empty
 ----------------
+tags:Tckn Iban DogrulamaType is Empty
+
 * Tckn Iban "dogrulamaType is Empty"
 
 Tckn Iban kullaniciAdi is Empty
 ----------------
+tags:Tckn Iban KullaniciAdi is Empty
+
 * Tckn Iban "kullaniciAdi is Empty"
 
 Tckn Iban platformId is 0
 ----------------
+tags:Tckn Iban PlatformId is 0
+
 * Tckn Iban "platformId is 0"
