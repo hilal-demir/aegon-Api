@@ -1,8 +1,0 @@
-{
-  "dogrulamaType": "KIMLIK_GSM",
-  "gsmNo": 5111111111,
-  "kanal": 11,
-  "kimlikNo": 11111111111,
-  "kullaniciAdi": "eren.celik",
-  "platformId": 5
-}
