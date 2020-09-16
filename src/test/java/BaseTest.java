@@ -44,6 +44,7 @@ public class BaseTest {
                     System.out.println("i 10 u geçti bu durmuyor");
                     break;
                 }
+                i++;
             }
 
         }
