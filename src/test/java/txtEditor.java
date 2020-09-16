@@ -9,7 +9,7 @@ public class txtEditor {
     public String getPost(String scenarioName,String scenarioType){
         String data="";
         String post="";
-        String filePath="src/test/resources/Documents/"+scenarioName+"/"+scenarioType+"/post.txt";
+        String filePath="home/batuhan.zafer/workspace/Documents/"+scenarioName+"/"+scenarioType+"/post.txt";
         try {
             File myObj = new File(filePath);
             Scanner myReader = new Scanner(myObj);
@@ -29,7 +29,7 @@ public class txtEditor {
     public String getExpected(String scenarioName,String scenarioType){
         String data="";
         String post="";
-        String filePath="src/test/resources/Documents/"+scenarioName+"/"+scenarioType+"/expected.txt";
+        String filePath="home/batuhan.zafer/workspace/Documents/"+scenarioName+"/"+scenarioType+"/expected.txt";
         try {
             File myObj = new File(filePath);
             Scanner myReader = new Scanner(myObj);
