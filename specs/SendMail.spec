@@ -7,4 +7,6 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
      
 Send An Mail
 ----------------
+tags:Send An Mail
+
 * Send The Report Mail

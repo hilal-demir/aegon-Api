@@ -13,4 +13,6 @@ tags:AEGONCURRENCY
 
 Moreum
 ----------------
+tags:Moreum
+
 *Moreum

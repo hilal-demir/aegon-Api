@@ -8,6 +8,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 Collection KK Gecersiz Format
 ----------------
 tags:CollectionKKGecersizFormat
+
 *Collection "KK Gecersiz Format"
 
 Collection amount 0

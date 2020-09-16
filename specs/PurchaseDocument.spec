@@ -7,5 +7,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
      
 Purchase Document Already Exists
 ----------------
+tags:Purchase Document Already Exists
+
 *Purchase Document "Alredy Exists"
 
