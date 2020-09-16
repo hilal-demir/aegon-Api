@@ -47,16 +47,18 @@ public class BaseTest {
         changesNames=changes.split(",");
 
         for (int i=0; i<changesNames.length;i++){
-            postChanges[i][1]=System.getenv(changesNames[i]);
+            postChanges[i][1]=System.getenv(changesNames[i].replaceAll(" ",""));
             postChanges[i][0]=changesNames[i];
-
         }
+
         int i=0;
         logger.info("Testinium üzerinden post için çekilen degişiklikler;");
         while (true){
+
             if(postChanges[i][0]==null){
                 break;
             }
+
             System.out.println(postChanges[i][0]+"="+postChanges[i][1]);
             i++;
         }
@@ -77,8 +79,8 @@ public class BaseTest {
         for (int i=0; i<changesNames.length;i++){
             expectedChanges[i][1]=System.getenv(changesNames[i]);
             expectedChanges[i][0]=changesNames[i];
-
         }
+
         int i=0;
         logger.info("Testinium üzerinden expected için çekilen degişiklikler;");
         while (true){
