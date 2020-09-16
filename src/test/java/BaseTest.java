@@ -51,7 +51,7 @@ public class BaseTest {
 
         for (int i=0; i<changesNames.length;i++){
             postChanges[i][1]=System.getenv(changesNames[i].replaceAll(" ",""));
-            postChanges[i][0]=changesNames[i];
+            postChanges[i][0]=changesNames[i].replaceAll(" ","");
         }
 
         int i=0;
@@ -81,7 +81,7 @@ public class BaseTest {
 
         for (int i=0; i<changesNames.length;i++){
             expectedChanges[i][1]=System.getenv(changesNames[i].replaceAll(" ",""));
-            expectedChanges[i][0]=changesNames[i];
+            expectedChanges[i][0]=changesNames[i].replaceAll(" ","");
         }
 
         int i=0;
