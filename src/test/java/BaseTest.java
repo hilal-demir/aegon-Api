@@ -30,6 +30,8 @@ public class BaseTest {
             logger.info("local koşum");
         } else {
             logger.info("Testinium üzerinden koşum");
+            String test= System.getenv().toString();
+            System.out.println(test+"----------------------------------");
         }
         }
 
