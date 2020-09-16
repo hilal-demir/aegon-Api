@@ -1,15 +1,11 @@
-import org.apache.commons.io.IOUtils;
 import org.junit.Assert;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Scanner;
-import java.nio.file.Files;
+
 public class txtEditor {
 
     public String getPost(String scenarioName,String scenarioType){
@@ -29,8 +25,8 @@ public class txtEditor {
             Assert.fail(filePath+" pathinde bir dosya bulunamadı "+e);
         }
 
-        doTheChanges(post,BaseTest.postChanges);
-        return post;
+
+        return doTheChanges(post,BaseTest.postChanges);
     }
 
     public String getExpected(String scenarioName,String scenarioType){
@@ -54,17 +50,17 @@ public class txtEditor {
         return post;
     }
 
-    public void doTheChanges(String js,String[][] changes){
+    public String doTheChanges(String js, String[][] changes){
         jsonEditor jsEditor=new jsonEditor();
         int i=0;
         while (true){
             if(changes[i][0]==null){
                 break;
             }
-            jsEditor.updateTheValue(changes[i][0],changes[i][1],js);
+            js=jsEditor.updateTheValue(changes[i][0],changes[i][1],js);
             i++;
         }
-
+        return js;
     }
 
 }

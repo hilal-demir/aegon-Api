@@ -39,7 +39,7 @@ public class jsonEditor {
 
 
     }
-    public  JSONObject updateTheValue(String pathOfValue, String value, String jsText){
+    public String updateTheValue(String pathOfValue, String value, String jsText){
         String[] path=pathOfValue.split("\\.");
         logger.info(pathOfValue+" için update yapılıyor.");
 
@@ -67,7 +67,7 @@ public class jsonEditor {
             Assert.fail("Bulunamayan path="+pathOfValue+" path beklenenden uzun ");
         }
 
-        return js;
+        return js.toString();
 
     }
 }
