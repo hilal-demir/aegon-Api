@@ -1,0 +1,9 @@
+{
+  "dogrulamaType": "",
+  "gsmNo": "",
+  "iban": "TR11111111111111111",
+  "kanal": 11,
+  "kimlikNo": 11111111111,
+  "kullaniciAdi": "aegon.aegon",
+  "platformId": 5
+}
