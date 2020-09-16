@@ -9,7 +9,7 @@ public class txtEditor {
     public String getPost(String scenarioName,String scenarioType){
         String data="";
         String post="";
-        String filePath="/home/batuhan.zafer/workspace/aegontest-41-2/src/test/resources/Documents/"+scenarioName+"/"+scenarioType+"/post.txt";
+        String filePath="src/test/resources/Documents/"+scenarioName+"/"+scenarioType+"/post.txt";
         try {
             File myObj = new File(filePath);
             Scanner myReader = new Scanner(myObj);
@@ -20,7 +20,7 @@ public class txtEditor {
             }
             myReader.close();
         } catch (FileNotFoundException e) {
-            Assert.fail(filePath+" pathinde bir dosya bulunamadı");
+            Assert.fail(filePath+" pathinde bir dosya bulunamadı "+e);
         }
 
         return post;
@@ -29,7 +29,7 @@ public class txtEditor {
     public String getExpected(String scenarioName,String scenarioType){
         String data="";
         String post="";
-        String filePath="/home/batuhan.zafer/workspace/aegontest-41-2/src/test/resources/Documents/"+scenarioName+"/"+scenarioType+"/expected.txt";
+        String filePath="src/test/resources/Documents/"+scenarioName+"/"+scenarioType+"/expected.txt";
         try {
             File myObj = new File(filePath);
             Scanner myReader = new Scanner(myObj);
@@ -41,7 +41,7 @@ public class txtEditor {
             myReader.close();
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
-            Assert.fail(filePath+" pathinde bir dosya bulunamadı");
+            Assert.fail(filePath+" pathinde bir dosya bulunamadı"+ e);
         }
 
         return post;
