@@ -1,13 +1,14 @@
 # Gauge - metadata dir
 .gauge
-
+.idea
 # Gauge - log files dir
 logs
 
-
+reports
 # Gauge - java class output directory
 gauge_bin
 
 # Gauge - java class target dir
 target
 
+Test Reports

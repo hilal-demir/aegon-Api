@@ -1,4 +1,6 @@
 
+import com.github.openjson.JSONException;
+import com.github.openjson.JSONObject;
 import com.thoughtworks.gauge.BeforeScenario;
 import com.thoughtworks.gauge.ExecutionContext;
 import org.apache.commons.lang3.StringUtils;
@@ -11,8 +13,8 @@ import java.util.ArrayList;
 
 public class BaseTest {
 
-    public String[][] postChanges=new String[100][100];
-    public String[][] expectedChanges=new String[100][100];
+    public static String[][] postChanges=new String[100][100];
+    public static String[][] expectedChanges=new String[100][100];
 
     private Logger logger = LoggerFactory.getLogger(getClass());
     public static String scenarioName;
@@ -26,6 +28,7 @@ public class BaseTest {
             "\n+++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n\n");
         if (StringUtils.isEmpty(System.getenv("key"))) {
             logger.info("local koşum");
+
         } else {
             //Testinium üzerinden yapılan değişşiklikler güncelleniyor
             setChangesForPost();
@@ -33,8 +36,8 @@ public class BaseTest {
 
 
         }
-        }
-        public void setChangesForPost(){
+    }
+    public void setChangesForPost(){
         String changes;
         String changesNames[];
         changes= System.getenv("PostChanges");
@@ -77,7 +80,7 @@ public class BaseTest {
         changesNames=changes.split(",");
 
         for (int i=0; i<changesNames.length;i++){
-            expectedChanges[i][1]=System.getenv(changesNames[i]);
+            expectedChanges[i][1]=System.getenv(changesNames[i].replaceAll(" ",""));
             expectedChanges[i][0]=changesNames[i];
         }
 
@@ -91,5 +94,7 @@ public class BaseTest {
             i++;
         }
     }
+
+
 
 }
