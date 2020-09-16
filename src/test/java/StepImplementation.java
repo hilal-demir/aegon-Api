@@ -13,7 +13,6 @@ import java.security.GeneralSecurityException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static com.sun.xml.internal.ws.policy.sourcemodel.wspolicy.XmlToken.Name;
 import static io.restassured.RestAssured.given;
 
 public class StepImplementation {
