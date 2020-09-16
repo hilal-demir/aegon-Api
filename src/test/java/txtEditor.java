@@ -37,12 +37,27 @@ public class txtEditor {
             Path test=Paths.get("./target");
             Assert.assertTrue(Files.exists(test));
         System.out.println("./target var");
+
         Path test1=Paths.get("./target/test-classes");
         Assert.assertTrue(Files.exists(test1));
         System.out.println("./target/test-classes var");
+
         Path test2=Paths.get("./target/test-classes/Documents");
         Assert.assertTrue(Files.exists(test2));
         System.out.println("./target/test-classes/Documents var");
+
+        Path test3=Paths.get("./target/test-classes/Documents"+scenarioName);
+        Assert.assertTrue(Files.exists(test3));
+        System.out.println("./target/test-classes/Documents"+scenarioName+"  var");
+
+        Path test4=Paths.get("./target/test-classes/Documents/"+scenarioName+"/"+scenarioType);
+        Assert.assertTrue(Files.exists(test4));
+        System.out.println("./target/test-classes/Documents"+scenarioName+"/"+scenarioType+"  var");
+
+        Path test5=Paths.get("./target/test-classes/Documents/"+scenarioName+"/"+scenarioType+"/post.txt");
+        Assert.assertTrue(Files.exists(test5));
+        System.out.println("./target/test-classes/Documents/"+scenarioName+"/"+scenarioType+"/post.txt"+"  var");
+        System.out.println("what is your problem ");
         try {
             File myObj = new File(filePath.toString());
             Scanner myReader = new Scanner(myObj);
