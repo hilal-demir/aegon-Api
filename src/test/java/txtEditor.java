@@ -6,6 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 import java.nio.file.Files;
 public class txtEditor {
@@ -15,7 +17,7 @@ public class txtEditor {
 
         String data="";
         String post="";
-        String filePath="./target/test-classes/Documents/"+scenarioName+"/"+scenarioType+"/post.txt";
+        Path filePath= Paths.get("./target/test-classes/Documents/"+scenarioName+"/"+scenarioType+"/post.txt");
 
 //        System.out.println(filePath+" dosyasına bakılacak");
 //        String fileName = filePath;
@@ -31,9 +33,18 @@ public class txtEditor {
 //
 //        }
 //        System.out.println("dosya bulundu =" +post);
-
+        System.out.println("test başlıyor");
+            Path test=Paths.get("./target");
+            Assert.assertTrue(Files.exists(test));
+        System.out.println("./target var");
+        Path test1=Paths.get("./target/test-classes");
+        Assert.assertTrue(Files.exists(test1));
+        System.out.println("./target/test-classes var");
+        Path test2=Paths.get("./target/test-classes/Documents");
+        Assert.assertTrue(Files.exists(test2));
+        System.out.println("./target/test-classes/Documents var");
         try {
-            File myObj = new File(filePath);
+            File myObj = new File(filePath.toString());
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                  data = myReader.nextLine();
