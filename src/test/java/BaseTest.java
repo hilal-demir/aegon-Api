@@ -27,26 +27,27 @@ public class BaseTest {
         } else {
             logger.info("Testinium üzerinden koşum");
             logger.info("Testinium üzerinden değişiklikler çekikiliyor.");
-            String[] changesNames= System.getenv("Changes").split(",");
-            for (int i=0; i<changesNames.length;i++){
-                postChanges[i][1]=System.getenv(changesNames[i]);
-                postChanges[i][0]=changesNames[i];
-
-            }
-            int i=0;
-            while (true){
-                if(postChanges[i][0]==null){
-                    break;
-                }
-                System.out.println("--------------------------------");
-                System.out.println(postChanges[i][0]+"="+postChanges[i][1]);
-                if(i>10){
-                    System.out.println("i 10 u geçti bu durmuyor");
-                    break;
-                }
-                i++;
-            }
-
+            String changesNames= System.getenv("Changes");
+//
+//            for (int i=0; i<changesNames.length;i++){
+//                postChanges[i][1]=System.getenv(changesNames[i]);
+//                postChanges[i][0]=changesNames[i];
+//
+//            }
+//            int i=0;
+//            while (true){
+//                if(postChanges[i][0]==null){
+//                    break;
+//                }
+//                System.out.println("--------------------------------");
+//                System.out.println(postChanges[i][0]+"="+postChanges[i][1]);
+//                if(i>10){
+//                    System.out.println("i 10 u geçti bu durmuyor");
+//                    break;
+//                }
+//                i++;
+//            }
+//
         }
         }
 
