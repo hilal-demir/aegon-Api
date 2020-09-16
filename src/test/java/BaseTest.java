@@ -35,7 +35,7 @@ public class BaseTest {
             }
             int i=0;
             while (true){
-                if(postChanges[i][0].isEmpty()){
+                if(postChanges[i][0]==null){
                     break;
                 }
                 System.out.println("--------------------------------");
