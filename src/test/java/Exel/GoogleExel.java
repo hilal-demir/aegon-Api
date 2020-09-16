@@ -71,27 +71,27 @@ public class GoogleExel {
         System.out.println(values);
     }
     public void fillExcel(String scnerioName,String date,String post,String expectedStatus,String actualStatus,String errorMessage,String message,String responseTime,Boolean status) throws IOException, GeneralSecurityException {
-        sheetsService = getSheetsService();
-        String statusText;
-        if(status){
-            statusText="Fail";
-        }else{
-            statusText="Pass";
-
-        }
-
-        ValueRange appendBody =new ValueRange()
-                .setValues(Arrays.asList(
-                        Arrays.asList(
-                                scnerioName,date,post,expectedStatus,actualStatus,errorMessage,message,responseTime,statusText )
-                ));
-
-        AppendValuesResponse appendResult2 =   sheetsService.spreadsheets().values()
-                .append(SPREADSHEET_ID,"Sayfa1",appendBody)
-                .setValueInputOption("USER_ENTERED")
-                .setInsertDataOption("INSERT_ROWS")
-                .setIncludeValuesInResponse(true)
-                .execute();
+//        sheetsService = getSheetsService();
+//        String statusText;
+//        if(status){
+//            statusText="Fail";
+//        }else{
+//            statusText="Pass";
+//
+//        }
+//
+//        ValueRange appendBody =new ValueRange()
+//                .setValues(Arrays.asList(
+//                        Arrays.asList(
+//                                scnerioName,date,post,expectedStatus,actualStatus,errorMessage,message,responseTime,statusText )
+//                ));
+//
+//        AppendValuesResponse appendResult2 =   sheetsService.spreadsheets().values()
+//                .append(SPREADSHEET_ID,"Sayfa1",appendBody)
+//                .setValueInputOption("USER_ENTERED")
+//                .setInsertDataOption("INSERT_ROWS")
+//                .setIncludeValuesInResponse(true)
+//                .execute();
     }
 
     public void getSheetDataAndSendTheMail(String date) throws IOException, GeneralSecurityException {
