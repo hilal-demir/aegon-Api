@@ -31966,3 +31966,2408 @@ Response Time= 1633ms
 2020-09-16 11:09:32 INFO  StepImplementation:499 compare - ignoreThePath stringinde yer alan pahtlar karşılaştırılmıyor...
 2020-09-16 11:09:32 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
 2020-09-16 11:09:32 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:40:03 INFO  Reflections:232 scan - Reflections took 7788 ms to scan 88 urls, producing 14918 keys and 85852 values 
+2020-09-16 21:40:04 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Black List-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:40:04 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:41:51 INFO  Reflections:232 scan - Reflections took 4532 ms to scan 60 urls, producing 7580 keys and 48277 values 
+2020-09-16 21:41:51 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Black List-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:41:51 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:41:51 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:41:51 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:13 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "result": "PASS",
+        "error": ""
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 21028ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:13 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:13 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:13 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:13 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:13 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Black List with out name-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:13 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:13 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:13 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:14 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "result": "UW",
+        "error": ""
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 477ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:14 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:14 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:14 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:14 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:14 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Black List wrong salt-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:14 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:14 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:14 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:14 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": null,
+        "status": "WARNING",
+        "statusCode": 0,
+        "detailCode": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.aegon.cnf.support.rest.dto.ServiceResponse<com.aegon.blacklist.model.response.BlackScanResponse>> com.aegon.blacklist.controller.BlackListController.getBlacklistFromBlackScan(com.aegon.blacklist.model.request.BlackScanRequest): [Field error in object 'blackScanRequest' on field 'salt': rejected value [Ga]; codes [Pattern.blackScanRequest.salt,Pattern.salt,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [blackScanRequest.salt,salt]; arguments []; default message [salt],[Ljavax.validation.constraints.Pattern$Flag;@58f634a7,T|G]; default message [Salt should be either 'T' or 'G']] ",
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 126ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:14 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:14 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:14 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:14 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:14 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Black List Empty salt-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:14 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:14 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:14 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:14 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": null,
+        "status": "WARNING",
+        "statusCode": 0,
+        "detailCode": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.aegon.cnf.support.rest.dto.ServiceResponse<com.aegon.blacklist.model.response.BlackScanResponse>> com.aegon.blacklist.controller.BlackListController.getBlacklistFromBlackScan(com.aegon.blacklist.model.request.BlackScanRequest): [Field error in object 'blackScanRequest' on field 'salt': rejected value []; codes [Pattern.blackScanRequest.salt,Pattern.salt,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [blackScanRequest.salt,salt]; arguments []; default message [salt],[Ljavax.validation.constraints.Pattern$Flag;@58f634a7,T|G]; default message [Salt should be either 'T' or 'G']] ",
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 117ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:14 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:14 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:14 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:14 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:14 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Customer Adress-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:14 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:14 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:14 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:14 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "acikAdres": "KÜÇÜKBAKKALKÖY MAH. GÜL AĞACI SK.  NO: 18  İÇ KAPI NO: 3 ATAŞEHİR / İSTANBUL",
+        "adresNo": "2273558870",
+        "adresTipi": "IlIlceMerkeziAdresi",
+        "binaAda": "1909",
+        "binaBlokAdi": null,
+        "binaKodu": "28473062",
+        "binaParsel": "4",
+        "binaSiteAdi": null,
+        "csbm": "GÜL AĞACI SK.",
+        "csbmKodu": "204468",
+        "disKapiNo": "18",
+        "icKapiNo": "3",
+        "ilAd": "İSTANBUL",
+        "ilKodu": "034",
+        "ilceAd": "ATAŞEHİR",
+        "ilceKodu": "034038",
+        "kimlikNo": "17222447278",
+        "kpsdenSorgulanmaTarihi": "2020-06-06T12:12:42+03:00",
+        "mahalle": "KÜÇÜKBAKKALKÖY MAH.",
+        "mahalleKodu": "40531",
+        "mernisIlKodu": "34",
+        "mernisIlceKodu": "2049",
+        "veriKonum": "sbm"
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 250ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:14 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:14 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:14 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:14 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:14 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Customer Adress Bos Tckn-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:14 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:14 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:14 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:15 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.aegon.cnf.support.rest.dto.ServiceResponse<com.aegon.customer.address.model.CustomerAddressResponse>> com.aegon.customer.address.controller.CustomerAddressController.getCustomerAddress(com.aegon.customer.address.model.CustomerAddressRequest): [Field error in object 'customerAddressRequest' on field 'tcId': rejected value []; codes [Digits.customerAddressRequest.tcId,Digits.tcId,Digits.java.lang.String,Digits]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [customerAddressRequest.tcId,tcId]; arguments []; default message [tcId],0,11]; default message [TC Id need to have only 11 characters]] ",
+        "status": "FAILURE",
+        "statusCode": 500,
+        "detailCode": "-1",
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 122ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:15 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:15 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:15 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:15 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:15 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Customer Adress Yanlis Tckn-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:15 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:15 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:15 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:15 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Server was unable to process request. ---> The remote server returned an error: (500) Internal Server Error.",
+        "status": "FAILURE",
+        "statusCode": 500,
+        "detailCode": "-1",
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 229ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:15 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:15 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:15 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:15 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:15 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Email-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:15 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:15 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:15 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:16 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "resultCode": 1,
+        "resultMessage": "OK",
+        "messageId": "b910562e-e294-40b3-b037-ac380165ae58",
+        "totalCount": 1,
+        "successCount": 1
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 1199ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:16 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:16 INFO  StepImplementation:499 compare - ignoreThePath stringinde yer alan pahtlar karşılaştırılmıyor...
+2020-09-16 21:42:16 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:16 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:16 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Email toMail is Empty-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:16 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:16 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:16 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:17 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "resultCode": 1,
+        "resultMessage": null,
+        "messageId": null,
+        "totalCount": 1,
+        "successCount": 1
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 712ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:17 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:17 INFO  StepImplementation:499 compare - ignoreThePath stringinde yer alan pahtlar karşılaştırılmıyor...
+2020-09-16 21:42:17 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:17 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:17 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------AEGON-CURRENCY-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:17 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:17 INFO  StepImplementation:464 sentTheGet - ******** Get Gönderiliyor ********
+2020-09-16 21:42:17 INFO  StepImplementation:468 sentTheGet - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "currencyList": [
+            {
+                "type": "EUR",
+                "value": 8.9052,
+                "dateTime": "2020-09-15T21:00:00.000Z"
+            },
+            {
+                "type": "USD",
+                "value": 7.4915,
+                "dateTime": "2020-09-15T21:00:00.000Z"
+            }
+        ]
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 181ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:17 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:17 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Moreum-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:17 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:17 INFO  StepImplementation:464 sentTheGet - ******** Get Gönderiliyor ********
+2020-09-16 21:42:20 INFO  StepImplementation:468 sentTheGet - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "returnCode": "0",
+        "returnData": 0,
+        "returnMessage": "Service is ready.",
+        "success": true
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 2495ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:20 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:20 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Mernis-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:20 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:20 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:20 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:20 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "maviKartCuzdanModel": null,
+        "tcKisiModelBilgi": {
+            "hata": null,
+            "ad": null,
+            "aileSiraNo": 0,
+            "anneAd": null,
+            "babaAd": null,
+            "belgeNo": null,
+            "bireySiraNo": 0,
+            "cinsiyet": null,
+            "cuzdanKayitNo": null,
+            "cuzdanNo": null,
+            "cuzdanSeri": null,
+            "cuzdanVerildigiIlce": null,
+            "cuzdanVerilmeNeden": null,
+            "cuzdanVerilmeTarih": null,
+            "dogumTarih": null,
+            "dogumYer": null,
+            "durum": null,
+            "duzenlenmeTarih": null,
+            "duzenleyenIlce": null,
+            "fotograf": null,
+            "kayitYerCilt": null,
+            "kayitYerIl": null,
+            "kayitYerIlce": null,
+            "medeniHal": null,
+            "olumTarih": null,
+            "oncekiSoyad": null,
+            "sonGecerlilikTarih": null,
+            "soyad": null,
+            "tcKimlikNo": 0,
+            "verenMakam": null,
+            "anneTCKimlikNo": 0,
+            "babaTCKimlikNo": 0,
+            "din": null,
+            "dogumYerKod": 0,
+            "esTCKimlikNo": 0
+        },
+        "ybKisiModel": null
+    },
+    "header": {
+        "message": "İşlem Başarılı",
+        "statusCode": 200,
+        "detailCode": "0",
+        "status": "SUCCESS"
+    }
+} 
+Response Time= 461ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:20 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:22 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Purchase Document Already Exists-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:22 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:22 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:22 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:22 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": null,
+    "header": {
+        "message": "\"A PDF file for the given personalIdNumber \\\"17222447278\\\", polId \\\"2223524\\\", insuranceSlug \\\"5-5-odullu-birikim\\\" and pdfTypeSlug \\\"03-basvuru-formu\\\" already exists. Please update it instead of creating a new one.\"",
+        "statusCode": 500,
+        "detailCode": "500"
+    }
+} 
+Response Time= 323ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:22 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:22 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:22 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:22 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:22 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Send An Mail-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:22 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:22 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:24 INFO  GoogleExel:106 getSheetDataAndSendTheMail - Google Sheets sevisinden rapor çakildi
+2020-09-16 21:42:25 INFO  localExcel:49 createAnExcell - 16-9-2020 09.42.22.xlsx dosyası oluşturuldu
+2020-09-16 21:42:25 INFO  mail:20 sendReport - Oluşturulan 16-9-2020 09.42.22.xlsx Dosyası mail olarak gönderiliyor
+2020-09-16 21:42:25 INFO  mail:55 sendReport - 
+Koşulan senaryo= 169
+Pass= 162
+Fail= 7
+2020-09-16 21:42:28 INFO  mail:82 sendReport - Mail başarılı bir şekilde gönderildi
+2020-09-16 21:42:28 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Sms-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:28 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:28 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:28 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:29 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "id": 746,
+        "Results": [
+            {
+                "MessageID": "188AE08EDF1446A3A5EDBC45CF873069",
+                "Status": "0"
+            }
+        ],
+        "Error": "0"
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 328ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:29 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:29 INFO  StepImplementation:499 compare - ignoreThePath stringinde yer alan pahtlar karşılaştırılmıyor...
+2020-09-16 21:42:29 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:29 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:29 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Sms Without Number-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:29 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:29 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:29 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:29 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "id": 747,
+        "Results": [
+            {
+                "MessageID": "",
+                "Status": "-306"
+            }
+        ],
+        "Error": "0"
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 223ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:29 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:29 INFO  StepImplementation:499 compare - ignoreThePath stringinde yer alan pahtlar karşılaştırılmıyor...
+2020-09-16 21:42:29 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:29 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:29 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Sms Without Content-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:29 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:29 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:29 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:29 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "id": 748,
+        "Results": [
+            {
+                "MessageID": "",
+                "Status": "-303"
+            }
+        ],
+        "Error": "0"
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 175ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:29 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:29 INFO  StepImplementation:499 compare - ignoreThePath stringinde yer alan pahtlar karşılaştırılmıyor...
+2020-09-16 21:42:29 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:29 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:29 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Tckn Gsm Wrong Gsm No-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:29 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:29 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:29 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:30 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": {
+        "dogrulamaSonuc": false
+    },
+    "header": {
+        "message": "İşlem Başarılı",
+        "statusCode": 200,
+        "detailCode": "0"
+    }
+} 
+Response Time= 450ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:30 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:30 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:30 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:30 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:30 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Tckn Gsm Empty dogrulamaType-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:30 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:30 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:30 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:30 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": null,
+    "header": {
+        "message": "JSON parse error: Cannot deserialize value of type `com.aegon.kkb.findeks.model.KKBFindeksDogrulamaType` from String \"\": not one of the values accepted for Enum class: [KIMLIK_GSM, KART_GSM, KIMLIK_IBAN, KART_KIMLIK]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `com.aegon.kkb.findeks.model.KKBFindeksDogrulamaType` from String \"\": not one of the values accepted for Enum class: [KIMLIK_GSM, KART_GSM, KIMLIK_IBAN, KART_KIMLIK]\n at [Source: (PushbackInputStream); line: 2, column: 20] (through reference chain: com.aegon.kkb.findeks.model.KKBFindeksRequest[\"dogrulamaType\"])",
+        "statusCode": 500,
+        "detailCode": "-1"
+    }
+} 
+Response Time= 131ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:30 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:30 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:30 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:30 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:30 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Tckn Gsm Empty kullaniciAdi-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:30 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:30 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:30 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:30 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": null,
+    "header": {
+        "message": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.aegon.kkb.findeks.rest.model.ServiceResponse<com.aegon.kkb.findeks.model.KKBFindeksResponse>> com.aegon.kkb.findeks.controller.KKBFindeksController.verify(com.aegon.kkb.findeks.model.KKBFindeksRequest): [Field error in object 'KKBFindeksRequest' on field 'kullaniciAdi': rejected value []; codes [NotBlank.KKBFindeksRequest.kullaniciAdi,NotBlank.kullaniciAdi,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [KKBFindeksRequest.kullaniciAdi,kullaniciAdi]; arguments []; default message [kullaniciAdi]]; default message [Kullanici Adi boş olamaz]] ",
+        "statusCode": 500,
+        "detailCode": "-1"
+    }
+} 
+Response Time= 108ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:30 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:30 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:30 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:30 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:30 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Tckn Gsm platformId is 0-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:30 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:30 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:30 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:30 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": null,
+    "header": {
+        "message": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.aegon.kkb.findeks.rest.model.ServiceResponse<com.aegon.kkb.findeks.model.KKBFindeksResponse>> com.aegon.kkb.findeks.controller.KKBFindeksController.verify(com.aegon.kkb.findeks.model.KKBFindeksRequest): [Field error in object 'KKBFindeksRequest' on field 'platformId': rejected value [0]; codes [Min.KKBFindeksRequest.platformId,Min.platformId,Min.java.lang.Integer,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [KKBFindeksRequest.platformId,platformId]; arguments []; default message [platformId],1]; default message [must be greater than or equal to 1]] ",
+        "statusCode": 500,
+        "detailCode": "-1"
+    }
+} 
+Response Time= 108ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:30 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:30 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:30 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:30 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:30 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Tckn Iban Sorgulama Yanlış Iban-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:30 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:30 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:30 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:30 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": {
+        "dogrulamaSonuc": false
+    },
+    "header": {
+        "message": "İşlem Başarılı",
+        "statusCode": 200,
+        "detailCode": "0"
+    }
+} 
+Response Time= 213ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:30 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:30 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:30 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:30 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:30 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Tckn Iban dogrulamaType is Empty-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:30 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:30 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:30 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:31 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": null,
+    "header": {
+        "message": "JSON parse error: Cannot deserialize value of type `com.aegon.kkb.findeks.model.KKBFindeksDogrulamaType` from String \"\": not one of the values accepted for Enum class: [KIMLIK_GSM, KART_GSM, KIMLIK_IBAN, KART_KIMLIK]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `com.aegon.kkb.findeks.model.KKBFindeksDogrulamaType` from String \"\": not one of the values accepted for Enum class: [KIMLIK_GSM, KART_GSM, KIMLIK_IBAN, KART_KIMLIK]\n at [Source: (PushbackInputStream); line: 2, column: 20] (through reference chain: com.aegon.kkb.findeks.model.KKBFindeksRequest[\"dogrulamaType\"])",
+        "statusCode": 500,
+        "detailCode": "-1"
+    }
+} 
+Response Time= 126ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:31 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:31 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:31 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:31 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:31 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Tckn Iban kullaniciAdi is Empty-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:31 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:31 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:31 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:31 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": null,
+    "header": {
+        "message": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.aegon.kkb.findeks.rest.model.ServiceResponse<com.aegon.kkb.findeks.model.KKBFindeksResponse>> com.aegon.kkb.findeks.controller.KKBFindeksController.verify(com.aegon.kkb.findeks.model.KKBFindeksRequest): [Field error in object 'KKBFindeksRequest' on field 'kullaniciAdi': rejected value []; codes [NotBlank.KKBFindeksRequest.kullaniciAdi,NotBlank.kullaniciAdi,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [KKBFindeksRequest.kullaniciAdi,kullaniciAdi]; arguments []; default message [kullaniciAdi]]; default message [Kullanici Adi boş olamaz]] ",
+        "statusCode": 500,
+        "detailCode": "-1"
+    }
+} 
+Response Time= 117ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:31 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:31 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:31 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:31 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:31 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Tckn Iban platformId is 0-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:31 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:31 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:31 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:31 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": null,
+    "header": {
+        "message": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.aegon.kkb.findeks.rest.model.ServiceResponse<com.aegon.kkb.findeks.model.KKBFindeksResponse>> com.aegon.kkb.findeks.controller.KKBFindeksController.verify(com.aegon.kkb.findeks.model.KKBFindeksRequest): [Field error in object 'KKBFindeksRequest' on field 'platformId': rejected value [0]; codes [Min.KKBFindeksRequest.platformId,Min.platformId,Min.java.lang.Integer,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [KKBFindeksRequest.platformId,platformId]; arguments []; default message [platformId],1]; default message [must be greater than or equal to 1]] ",
+        "statusCode": 500,
+        "detailCode": "-1"
+    }
+} 
+Response Time= 107ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:31 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:31 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:31 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:31 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:31 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Collection KK Gecersiz Format-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:31 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:31 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:31 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:31 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Kredi karti numarasi gecerli formatta degil.",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": "99"
+    }
+} 
+Response Time= 508ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:31 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:31 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:31 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:31 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:31 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Collection amount 0-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:31 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:31 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:31 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:32 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Sifir (0) satis ve preauth islemleri icin gecerli tutar olamaz.",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": "99"
+    }
+} 
+Response Time= 344ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:32 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:32 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:32 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:32 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:32 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Collection apllicationId is Already taken-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:32 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:32 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:32 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:32 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Bu siparis numarasi ile zaten basarili bir siparis var.",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": "99"
+    }
+} 
+Response Time= 342ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:32 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:32 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:32 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:32 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:32 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Customer Adress-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:32 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:32 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:32 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:32 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "acikAdres": "KÜÇÜKBAKKALKÖY MAH. GÜL AĞACI SK.  NO: 18  İÇ KAPI NO: 3 ATAŞEHİR / İSTANBUL",
+        "adresNo": "2273558870",
+        "adresTipi": "IlIlceMerkeziAdresi",
+        "binaAda": "1909",
+        "binaBlokAdi": null,
+        "binaKodu": "28473062",
+        "binaParsel": "4",
+        "binaSiteAdi": null,
+        "csbm": "GÜL AĞACI SK.",
+        "csbmKodu": "204468",
+        "disKapiNo": "18",
+        "icKapiNo": "3",
+        "ilAd": "İSTANBUL",
+        "ilKodu": "034",
+        "ilceAd": "ATAŞEHİR",
+        "ilceKodu": "034038",
+        "kimlikNo": "17222447278",
+        "kpsdenSorgulanmaTarihi": "2020-06-06T12:12:42+03:00",
+        "mahalle": "KÜÇÜKBAKKALKÖY MAH.",
+        "mahalleKodu": "40531",
+        "mernisIlKodu": "34",
+        "mernisIlceKodu": "2049",
+        "veriKonum": "sbm"
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 211ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:32 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:32 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:32 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:32 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:32 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Customer Adress Bos Tckn-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:32 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:32 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:32 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:32 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.aegon.cnf.support.rest.dto.ServiceResponse<com.aegon.customer.address.model.CustomerAddressResponse>> com.aegon.customer.address.controller.CustomerAddressController.getCustomerAddress(com.aegon.customer.address.model.CustomerAddressRequest): [Field error in object 'customerAddressRequest' on field 'tcId': rejected value []; codes [Digits.customerAddressRequest.tcId,Digits.tcId,Digits.java.lang.String,Digits]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [customerAddressRequest.tcId,tcId]; arguments []; default message [tcId],0,11]; default message [TC Id need to have only 11 characters]] ",
+        "status": "FAILURE",
+        "statusCode": 500,
+        "detailCode": "-1",
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 105ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:32 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:32 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:32 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:32 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:32 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Customer Adress Yanlis Tckn-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:32 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:32 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:32 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:33 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Server was unable to process request. ---> The remote server returned an error: (500) Internal Server Error.",
+        "status": "FAILURE",
+        "statusCode": 500,
+        "detailCode": "-1",
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 142ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:33 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:33 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:33 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:33 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:33 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Email-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:33 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:33 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:33 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:33 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "resultCode": 1,
+        "resultMessage": "OK",
+        "messageId": "a4b1d5e0-126d-442a-b763-ac380165c319",
+        "totalCount": 1,
+        "successCount": 1
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 609ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:33 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:33 INFO  StepImplementation:499 compare - ignoreThePath stringinde yer alan pahtlar karşılaştırılmıyor...
+2020-09-16 21:42:33 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:33 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:33 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Email toMail is Empty-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:33 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:33 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:33 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:34 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "resultCode": 1,
+        "resultMessage": null,
+        "messageId": null,
+        "totalCount": 1,
+        "successCount": 1
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 498ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:34 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:34 INFO  StepImplementation:499 compare - ignoreThePath stringinde yer alan pahtlar karşılaştırılmıyor...
+2020-09-16 21:42:34 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:34 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:34 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------AEGON-CURRENCY-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:34 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:34 INFO  StepImplementation:464 sentTheGet - ******** Get Gönderiliyor ********
+2020-09-16 21:42:34 INFO  StepImplementation:468 sentTheGet - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "currencyList": [
+            {
+                "type": "EUR",
+                "value": 8.9052,
+                "dateTime": "2020-09-15T21:00:00.000Z"
+            },
+            {
+                "type": "USD",
+                "value": 7.4915,
+                "dateTime": "2020-09-15T21:00:00.000Z"
+            }
+        ]
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 142ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:34 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:34 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Moreum-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:34 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:34 INFO  StepImplementation:464 sentTheGet - ******** Get Gönderiliyor ********
+2020-09-16 21:42:34 INFO  StepImplementation:468 sentTheGet - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "returnCode": "0",
+        "returnData": 0,
+        "returnMessage": "Service is ready.",
+        "success": true
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 182ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:34 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:34 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Purchase Document Already Exists-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:34 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:34 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:34 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:34 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": null,
+    "header": {
+        "message": "\"A PDF file for the given personalIdNumber \\\"17222447278\\\", polId \\\"2223524\\\", insuranceSlug \\\"5-5-odullu-birikim\\\" and pdfTypeSlug \\\"03-basvuru-formu\\\" already exists. Please update it instead of creating a new one.\"",
+        "statusCode": 500,
+        "detailCode": "500"
+    }
+} 
+Response Time= 263ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:34 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:34 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:34 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:34 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:34 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Sms-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:34 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:34 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:34 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:34 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "id": 749,
+        "Results": [
+            {
+                "MessageID": "6787181D18D64A50B1C6B5FD89602DA4",
+                "Status": "0"
+            }
+        ],
+        "Error": "0"
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 190ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:34 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:34 INFO  StepImplementation:499 compare - ignoreThePath stringinde yer alan pahtlar karşılaştırılmıyor...
+2020-09-16 21:42:34 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:34 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:34 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Sms Without Number-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:34 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:34 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:34 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:35 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "id": 750,
+        "Results": [
+            {
+                "MessageID": "",
+                "Status": "-306"
+            }
+        ],
+        "Error": "0"
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 270ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:35 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:35 INFO  StepImplementation:499 compare - ignoreThePath stringinde yer alan pahtlar karşılaştırılmıyor...
+2020-09-16 21:42:35 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:35 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:35 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Sms Without Content-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:35 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:35 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:35 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:35 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "id": 751,
+        "Results": [
+            {
+                "MessageID": "",
+                "Status": "-303"
+            }
+        ],
+        "Error": "0"
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 248ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:35 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:35 INFO  StepImplementation:499 compare - ignoreThePath stringinde yer alan pahtlar karşılaştırılmıyor...
+2020-09-16 21:42:35 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:35 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:35 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Tckn Gsm Wrong Gsm No-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:35 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:35 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:35 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:35 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": {
+        "dogrulamaSonuc": false
+    },
+    "header": {
+        "message": "İşlem Başarılı",
+        "statusCode": 200,
+        "detailCode": "0"
+    }
+} 
+Response Time= 466ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:35 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:35 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:35 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:35 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:35 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Tckn Gsm Empty dogrulamaType-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:35 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:35 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:36 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:36 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": null,
+    "header": {
+        "message": "JSON parse error: Cannot deserialize value of type `com.aegon.kkb.findeks.model.KKBFindeksDogrulamaType` from String \"\": not one of the values accepted for Enum class: [KIMLIK_GSM, KART_GSM, KIMLIK_IBAN, KART_KIMLIK]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `com.aegon.kkb.findeks.model.KKBFindeksDogrulamaType` from String \"\": not one of the values accepted for Enum class: [KIMLIK_GSM, KART_GSM, KIMLIK_IBAN, KART_KIMLIK]\n at [Source: (PushbackInputStream); line: 2, column: 20] (through reference chain: com.aegon.kkb.findeks.model.KKBFindeksRequest[\"dogrulamaType\"])",
+        "statusCode": 500,
+        "detailCode": "-1"
+    }
+} 
+Response Time= 105ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:36 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:36 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:36 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:36 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:36 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Tckn Gsm Empty kullaniciAdi-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:36 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:36 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:36 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:36 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": null,
+    "header": {
+        "message": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.aegon.kkb.findeks.rest.model.ServiceResponse<com.aegon.kkb.findeks.model.KKBFindeksResponse>> com.aegon.kkb.findeks.controller.KKBFindeksController.verify(com.aegon.kkb.findeks.model.KKBFindeksRequest): [Field error in object 'KKBFindeksRequest' on field 'kullaniciAdi': rejected value []; codes [NotBlank.KKBFindeksRequest.kullaniciAdi,NotBlank.kullaniciAdi,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [KKBFindeksRequest.kullaniciAdi,kullaniciAdi]; arguments []; default message [kullaniciAdi]]; default message [Kullanici Adi boş olamaz]] ",
+        "statusCode": 500,
+        "detailCode": "-1"
+    }
+} 
+Response Time= 65ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:36 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:36 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:36 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:36 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:36 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Tckn Gsm platformId is 0-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:36 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:36 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:36 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:36 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": null,
+    "header": {
+        "message": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.aegon.kkb.findeks.rest.model.ServiceResponse<com.aegon.kkb.findeks.model.KKBFindeksResponse>> com.aegon.kkb.findeks.controller.KKBFindeksController.verify(com.aegon.kkb.findeks.model.KKBFindeksRequest): [Field error in object 'KKBFindeksRequest' on field 'platformId': rejected value [0]; codes [Min.KKBFindeksRequest.platformId,Min.platformId,Min.java.lang.Integer,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [KKBFindeksRequest.platformId,platformId]; arguments []; default message [platformId],1]; default message [must be greater than or equal to 1]] ",
+        "statusCode": 500,
+        "detailCode": "-1"
+    }
+} 
+Response Time= 96ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:36 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:36 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:36 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:36 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:36 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Tckn Iban Sorgulama Yanlış Iban-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:36 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:36 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:36 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:36 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": {
+        "dogrulamaSonuc": false
+    },
+    "header": {
+        "message": "İşlem Başarılı",
+        "statusCode": 200,
+        "detailCode": "0"
+    }
+} 
+Response Time= 378ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:36 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:36 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:36 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:36 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:36 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Tckn Iban dogrulamaType is Empty-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:36 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:36 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:36 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:36 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": null,
+    "header": {
+        "message": "JSON parse error: Cannot deserialize value of type `com.aegon.kkb.findeks.model.KKBFindeksDogrulamaType` from String \"\": not one of the values accepted for Enum class: [KIMLIK_GSM, KART_GSM, KIMLIK_IBAN, KART_KIMLIK]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `com.aegon.kkb.findeks.model.KKBFindeksDogrulamaType` from String \"\": not one of the values accepted for Enum class: [KIMLIK_GSM, KART_GSM, KIMLIK_IBAN, KART_KIMLIK]\n at [Source: (PushbackInputStream); line: 2, column: 20] (through reference chain: com.aegon.kkb.findeks.model.KKBFindeksRequest[\"dogrulamaType\"])",
+        "statusCode": 500,
+        "detailCode": "-1"
+    }
+} 
+Response Time= 100ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:36 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:36 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:36 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:36 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:36 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Tckn Iban kullaniciAdi is Empty-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:36 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:36 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:36 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:36 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": null,
+    "header": {
+        "message": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.aegon.kkb.findeks.rest.model.ServiceResponse<com.aegon.kkb.findeks.model.KKBFindeksResponse>> com.aegon.kkb.findeks.controller.KKBFindeksController.verify(com.aegon.kkb.findeks.model.KKBFindeksRequest): [Field error in object 'KKBFindeksRequest' on field 'kullaniciAdi': rejected value []; codes [NotBlank.KKBFindeksRequest.kullaniciAdi,NotBlank.kullaniciAdi,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [KKBFindeksRequest.kullaniciAdi,kullaniciAdi]; arguments []; default message [kullaniciAdi]]; default message [Kullanici Adi boş olamaz]] ",
+        "statusCode": 500,
+        "detailCode": "-1"
+    }
+} 
+Response Time= 108ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:36 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:36 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:36 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:36 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:36 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Tckn Iban platformId is 0-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:36 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:36 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:36 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:37 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "result": null,
+    "header": {
+        "message": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.aegon.kkb.findeks.rest.model.ServiceResponse<com.aegon.kkb.findeks.model.KKBFindeksResponse>> com.aegon.kkb.findeks.controller.KKBFindeksController.verify(com.aegon.kkb.findeks.model.KKBFindeksRequest): [Field error in object 'KKBFindeksRequest' on field 'platformId': rejected value [0]; codes [Min.KKBFindeksRequest.platformId,Min.platformId,Min.java.lang.Integer,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [KKBFindeksRequest.platformId,platformId]; arguments []; default message [platformId],1]; default message [must be greater than or equal to 1]] ",
+        "statusCode": 500,
+        "detailCode": "-1"
+    }
+} 
+Response Time= 109ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:37 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:37 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:37 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:37 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:37 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------User Info Only Nick Name-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:37 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:37 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:37 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:37 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "agency": null,
+        "user": {
+            "id": "d9cdd7eb-7c26-49ef-9be0-690080c1aeef",
+            "nickName": "a.b",
+            "registryNumber": "11111",
+            "name": "",
+            "surname": "",
+            "tck": "",
+            "phoneNumber": "",
+            "photoUrl": "emakin.aegon.com.tr/file/",
+            "salesChannel": "Outsource",
+            "areaGroup": null,
+            "area": "ANALİZ VE PROJE YÖNETİMİ",
+            "branch": "İŞ ANALİZİ VE PROJE YÖNETİMİ",
+            "team": "İŞ ANALİZİ VE PROJE YÖNETİMİ",
+            "subTeam": "İŞ ANALİZİ VE PROJE YÖNETİMİ",
+            "title": "UZMAN 2",
+            "role": "",
+            "managerTCK": {
+                "string": [
+                    "63172415560",
+                    "44719866892",
+                    "52678168520"
+                ]
+            },
+            "startDate": "2016-07-27T21:00:00.000+0000",
+            "endDate": null,
+            "phoneNumbers": null,
+            "segem": "0",
+            "tobb": "false",
+            "active": true,
+            "email": "a.b@aegon.com.tr"
+        },
+        "message": null
+    },
+    "header": {
+        "message": "İşlem Başarılı",
+        "statusCode": 200,
+        "detailCode": "0"
+    }
+} 
+Response Time= 136ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:37 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:37 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:37 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:37 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:37 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------User Info Only registry Number-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:37 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:37 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:37 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:37 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "agency": null,
+        "user": {
+            "id": "d9cdd7eb-7c26-49ef-9be0-690080c1aeef",
+            "nickName": null,
+            "registryNumber": "11111",
+            "name": "",
+            "surname": "",
+            "tck": "",
+            "phoneNumber": "",
+            "photoUrl": "emakin.aegon.com.tr/file/",
+            "salesChannel": "Outsource",
+            "areaGroup": null,
+            "area": "ANALİZ VE PROJE YÖNETİMİ",
+            "branch": "İŞ ANALİZİ VE PROJE YÖNETİMİ",
+            "team": "İŞ ANALİZİ VE PROJE YÖNETİMİ",
+            "subTeam": "İŞ ANALİZİ VE PROJE YÖNETİMİ",
+            "title": "UZMAN 2",
+            "role": "",
+            "managerTCK": {
+                "string": [
+                    "63172415560",
+                    "44719866892",
+                    "52678168520"
+                ]
+            },
+            "startDate": "2016-07-27T21:00:00.000+0000",
+            "endDate": null,
+            "phoneNumbers": null,
+            "segem": "0",
+            "tobb": "false",
+            "active": true,
+            "email": "a.b@aegon.com.tr"
+        },
+        "message": null
+    },
+    "header": {
+        "message": "İşlem Başarılı",
+        "statusCode": 200,
+        "detailCode": "0"
+    }
+} 
+Response Time= 129ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:37 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:37 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:37 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:37 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:37 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------User Info Only agency Registry Number-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:37 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:37 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:37 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:37 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "agency": null,
+        "user": null,
+        "message": null
+    },
+    "header": {
+        "message": "İşlem Başarılı",
+        "statusCode": 200,
+        "detailCode": "0"
+    }
+} 
+Response Time= 110ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:37 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:37 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:37 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:37 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:37 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------User Info Wrong Nick Name-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:37 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:37 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:37 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:37 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Kullanıcı adı veya partaj bilgisi yanlış",
+        "statusCode": 200,
+        "detailCode": "Kullanıcı adı veya partaj bilgisi yanlış"
+    }
+} 
+Response Time= 132ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:37 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:37 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:37 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:37 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:37 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------User Info Wrong registry Number-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:37 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:37 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:37 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:37 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Kullanıcı adı veya partaj bilgisi yanlış",
+        "statusCode": 200,
+        "detailCode": "Kullanıcı adı veya partaj bilgisi yanlış"
+    }
+} 
+Response Time= 113ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:37 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:37 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:37 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:37 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:37 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------User Info Wrong agency Registry Number-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:37 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:37 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:37 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:37 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "agency": null,
+        "user": null,
+        "message": null
+    },
+    "header": {
+        "message": "İşlem Başarılı",
+        "statusCode": 200,
+        "detailCode": "0"
+    }
+} 
+Response Time= 111ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:37 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:37 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:37 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:37 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:37 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------User Info All of Them is Empty-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:37 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:37 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:37 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:38 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Kullanıcı adı veya partaj bilgisi gereklidir",
+        "statusCode": 200,
+        "detailCode": "Kullanıcı adı veya partaj bilgisi gereklidir"
+    }
+} 
+Response Time= 104ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:38 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:38 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:38 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:38 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:38 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Send An Mail-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:38 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:38 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:38 INFO  GoogleExel:106 getSheetDataAndSendTheMail - Google Sheets sevisinden rapor çakildi
+2020-09-16 21:42:38 INFO  localExcel:49 createAnExcell - 16-9-2020 09.42.38.xlsx dosyası oluşturuldu
+2020-09-16 21:42:38 INFO  mail:20 sendReport - Oluşturulan 16-9-2020 09.42.38.xlsx Dosyası mail olarak gönderiliyor
+2020-09-16 21:42:38 INFO  mail:55 sendReport - 
+Koşulan senaryo= 169
+Pass= 162
+Fail= 7
+2020-09-16 21:42:41 INFO  mail:82 sendReport - Mail başarılı bir şekilde gönderildi
+2020-09-16 21:42:41 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Total Assurance-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:41 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:42 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------User Info Only Nick Name-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:42 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:42 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:42 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:42 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "agency": null,
+        "user": {
+            "id": "d9cdd7eb-7c26-49ef-9be0-690080c1aeef",
+            "nickName": "a.b",
+            "registryNumber": "11111",
+            "name": "",
+            "surname": "",
+            "tck": "",
+            "phoneNumber": "",
+            "photoUrl": "emakin.aegon.com.tr/file/",
+            "salesChannel": "Outsource",
+            "areaGroup": null,
+            "area": "ANALİZ VE PROJE YÖNETİMİ",
+            "branch": "İŞ ANALİZİ VE PROJE YÖNETİMİ",
+            "team": "İŞ ANALİZİ VE PROJE YÖNETİMİ",
+            "subTeam": "İŞ ANALİZİ VE PROJE YÖNETİMİ",
+            "title": "UZMAN 2",
+            "role": "",
+            "managerTCK": {
+                "string": [
+                    "63172415560",
+                    "44719866892",
+                    "52678168520"
+                ]
+            },
+            "startDate": "2016-07-27T21:00:00.000+0000",
+            "endDate": null,
+            "phoneNumbers": null,
+            "segem": "0",
+            "tobb": "false",
+            "active": true,
+            "email": "a.b@aegon.com.tr"
+        },
+        "message": null
+    },
+    "header": {
+        "message": "İşlem Başarılı",
+        "statusCode": 200,
+        "detailCode": "0"
+    }
+} 
+Response Time= 148ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:42 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:42 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:42 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:42 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:42 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------User Info Only registry Number-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:42 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:42 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:42 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:42 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "agency": null,
+        "user": {
+            "id": "d9cdd7eb-7c26-49ef-9be0-690080c1aeef",
+            "nickName": null,
+            "registryNumber": "11111",
+            "name": "",
+            "surname": "",
+            "tck": "",
+            "phoneNumber": "",
+            "photoUrl": "emakin.aegon.com.tr/file/",
+            "salesChannel": "Outsource",
+            "areaGroup": null,
+            "area": "ANALİZ VE PROJE YÖNETİMİ",
+            "branch": "İŞ ANALİZİ VE PROJE YÖNETİMİ",
+            "team": "İŞ ANALİZİ VE PROJE YÖNETİMİ",
+            "subTeam": "İŞ ANALİZİ VE PROJE YÖNETİMİ",
+            "title": "UZMAN 2",
+            "role": "",
+            "managerTCK": {
+                "string": [
+                    "63172415560",
+                    "44719866892",
+                    "52678168520"
+                ]
+            },
+            "startDate": "2016-07-27T21:00:00.000+0000",
+            "endDate": null,
+            "phoneNumbers": null,
+            "segem": "0",
+            "tobb": "false",
+            "active": true,
+            "email": "a.b@aegon.com.tr"
+        },
+        "message": null
+    },
+    "header": {
+        "message": "İşlem Başarılı",
+        "statusCode": 200,
+        "detailCode": "0"
+    }
+} 
+Response Time= 144ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:42 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:42 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:42 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:42 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:42 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------User Info Only agency Registry Number-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:42 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:42 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:42 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:42 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "agency": null,
+        "user": null,
+        "message": null
+    },
+    "header": {
+        "message": "İşlem Başarılı",
+        "statusCode": 200,
+        "detailCode": "0"
+    }
+} 
+Response Time= 108ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:42 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:42 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:42 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:42 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:42 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------User Info Wrong Nick Name-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:42 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:42 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:42 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:42 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Kullanıcı adı veya partaj bilgisi yanlış",
+        "statusCode": 200,
+        "detailCode": "Kullanıcı adı veya partaj bilgisi yanlış"
+    }
+} 
+Response Time= 113ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:42 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:42 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:42 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:42 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:42 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------User Info Wrong registry Number-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:42 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:42 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:42 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:42 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Kullanıcı adı veya partaj bilgisi yanlış",
+        "statusCode": 200,
+        "detailCode": "Kullanıcı adı veya partaj bilgisi yanlış"
+    }
+} 
+Response Time= 70ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:42 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:42 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:42 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:42 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:42 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------User Info Wrong agency Registry Number-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:42 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:43 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:43 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:43 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "agency": null,
+        "user": null,
+        "message": null
+    },
+    "header": {
+        "message": "İşlem Başarılı",
+        "statusCode": 200,
+        "detailCode": "0"
+    }
+} 
+Response Time= 100ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:43 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:43 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:43 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:43 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:43 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------User Info All of Them is Empty-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:43 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:43 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:43 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:43 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Kullanıcı adı veya partaj bilgisi gereklidir",
+        "statusCode": 200,
+        "detailCode": "Kullanıcı adı veya partaj bilgisi gereklidir"
+    }
+} 
+Response Time= 96ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:43 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:43 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:43 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:43 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:43 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Collection KK Gecersiz Format-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:43 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:43 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:43 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:43 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Kredi karti numarasi gecerli formatta degil.",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": "99"
+    }
+} 
+Response Time= 443ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:43 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:43 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:43 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:43 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:43 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Collection amount 0-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:43 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:43 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:43 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:43 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Sifir (0) satis ve preauth islemleri icin gecerli tutar olamaz.",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": "99"
+    }
+} 
+Response Time= 296ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:43 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:43 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:43 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:43 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:42:43 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Collection apllicationId is Already taken-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:43 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:42:43 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:42:43 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:42:44 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Bu siparis numarasi ile zaten basarili bir siparis var.",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": "99"
+    }
+} 
+Response Time= 398ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:42:44 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:42:44 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:42:44 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:42:44 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 21:43:05 INFO  Reflections:232 scan - Reflections took 6676 ms to scan 88 urls, producing 14918 keys and 85852 values 
+2020-09-16 21:43:07 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Black List-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:43:07 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 21:43:07 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 21:43:07 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 21:43:09 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "result": "PASS",
+        "error": ""
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 1575ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 21:43:09 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 21:43:09 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-16 21:43:09 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 21:43:09 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 22:48:52 INFO  Reflections:232 scan - Reflections took 7419 ms to scan 88 urls, producing 14918 keys and 85852 values 
+2020-09-16 22:48:53 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Send An Mail-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 22:48:53 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 22:48:53 INFO  mail:24 sendReport - Oluşturulan 10-9-2020 10.59.29.xlsx Dosyası mail olarak gönderiliyor
+2020-09-16 22:48:53 INFO  mail:60 sendReport - null
+2020-09-16 22:48:56 INFO  mail:96 sendReport - Mail başarılı bir şekilde gönderildi

@@ -48,7 +48,7 @@ public class localExcel {
         }
         logger.info(Name+".xlsx"+" dosyası oluşturuldu");
         mail Mail=new mail();
-        Mail.sendReport(Name+".xlsx",count(array));
+      //  Mail.sendReport(Name+".xlsx",count(array));
     }
     public String count(String[][] data){
         System.out.println("cont");

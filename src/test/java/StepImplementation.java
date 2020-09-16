@@ -7,12 +7,13 @@ import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.skyscreamer.jsonassert.JSONCompareResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+import mail.mail;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import static com.sun.xml.internal.ws.policy.sourcemodel.wspolicy.XmlToken.Name;
 import static io.restassured.RestAssured.given;
 
 public class StepImplementation {
@@ -454,7 +455,9 @@ public class StepImplementation {
 
     @Step("Send The Report Mail")
     public void sendTheReportMail() throws IOException, GeneralSecurityException {
-        googleExel.getSheetDataAndSendTheMail(getDate().replaceAll("\n"," "));
+        mail Mail=new mail();
+        Mail.sendReport("10-9-2020 10.59.29.xlsx");
+   //     googleExel.getSheetDataAndSendTheMail(getDate().replaceAll("\n"," "));
     }
 
 

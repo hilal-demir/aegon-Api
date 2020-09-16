@@ -1,7 +1,11 @@
 package mail;
+import org.junit.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 import javax.activation.DataHandler;
@@ -16,8 +20,9 @@ import javax.mail.internet.MimeMultipart;
 public class mail {
     private Logger logger = LoggerFactory.getLogger(getClass());
 
-    public void sendReport(String fileName,String count) {
+    public void sendReport(String fileName) {
         logger.info("Oluşturulan "+fileName+" Dosyası mail olarak gönderiliyor");
+        String count="null";
         try {
             // e-postayı göndereceğiniz adres
             String from = "testiniumAegonApi@gmail.com";
@@ -63,6 +68,15 @@ public class mail {
             Multipart multipart = new MimeMultipart();
             multipart.addBodyPart(messageBodyPart);
 
+            System.out.println("path testi başlasın");
+            Path test2= Paths.get("./Test Reports/"+fileName);
+            Assert.assertTrue(Files.exists(test2));
+            System.out.println("./Test Reports/"+fileName+" da dosya bulundu garip");
+
+            Path test3= Paths.get("Test Reports/"+fileName);
+            Assert.assertTrue(Files.exists(test3));
+            System.out.println("Test Reports/"+fileName+" da dosya bulundu garip");
+            System.out.println("path testi bitti başarılı");
 
 
             messageBodyPart = new MimeBodyPart();
