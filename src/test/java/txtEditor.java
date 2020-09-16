@@ -54,7 +54,7 @@ public class txtEditor {
         Assert.assertTrue(Files.exists(test4));
         System.out.println("./target/test-classes/Documents"+scenarioName+"/"+scenarioType+"  var");
 
-        Path test5=Paths.get("./target/test-classes/Documents/"+scenarioName+"/"+scenarioType+"/post.txt");
+        Path test5=Paths.get("./target/test-classes/Documents/"+scenarioName+"/"+scenarioType+"/Post.txt");
         Assert.assertTrue(Files.exists(test5));
         System.out.println("./target/test-classes/Documents/"+scenarioName+"/"+scenarioType+"/post.txt"+"  var");
         System.out.println("what is your problem ");
