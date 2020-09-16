@@ -17,7 +17,7 @@ public class txtEditor {
         String post="";
         String filePath="Documents/"+scenarioName+"/"+scenarioType+"/post.txt";
 
-
+        System.out.println(filePath+" dosyasına bakılacak");
         String fileName = filePath;
         ClassLoader classLoader = getClass().getClassLoader();
 
