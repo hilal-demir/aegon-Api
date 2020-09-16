@@ -27,7 +27,8 @@ public class txtEditor {
             System.out.println(result);
             post=result;
         } catch (IOException e) {
-            e.printStackTrace();
+            Assert.fail(filePath+" dosyası bulunamadı "+e);
+
         }
 //        try {
 //            File myObj = new File(filePath);
@@ -60,7 +61,7 @@ public class txtEditor {
             System.out.println(result);
             post=result;
         } catch (IOException e) {
-            e.printStackTrace();
+            Assert.fail(filePath+" dosyası bulunamadı "+e);
         }
 
 //        try {
