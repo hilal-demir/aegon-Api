@@ -30,11 +30,11 @@
   <div class="report-overview">
     <div class="report_chart">
       <div class="chart">
-        <svg id="pie-chart" data-results="1,0,0" data-total="1">
+        <svg id="pie-chart" data-results="0,1,0" data-total="1">
           <path class="status failed" />
-          <path class="shadow failed" data-status="failed"><title>Failed: 1/1</title></path>
+          <path class="shadow failed" data-status="failed"><title>Failed: 0/1</title></path>
           <path class="status passed" />
-          <path class="shadow passed" data-status="passed"><title>Passed: 0/1</title></path>
+          <path class="shadow passed" data-status="passed"><title>Passed: 1/1</title></path>
           <path class="status skipped" />
           <path class="shadow skipped" data-status="skipped"><title>Skipped: 0/1</title></path>
         </svg>
@@ -43,14 +43,14 @@
     <div class="report_test-results">
       <div class="report_test-result specs">
           <div class="total-specs" title="Filter all specs"><span class="txt">Total specs</span><span class="value">1</span></div>
-          <div class="fail spec-filter" data-status="failed" title="Filter failed specs"><span class="value">1</span></div>
-          <div class="pass spec-filter" data-status="passed" title="Filter passed specs"><span class="value">0</span></div>
+          <div class="fail spec-filter" data-status="failed" title="Filter failed specs"><span class="value">0</span></div>
+          <div class="pass spec-filter" data-status="passed" title="Filter passed specs"><span class="value">1</span></div>
           <div class="skip spec-filter" data-status="skipped" title="Filter skipped specs"><span class="value">0</span></div>
       </div>
       <div class="report_test-result scenarios">
           <div class="total-scenarios"><span class="txt">Total scenario</span><span class="value">1</span></div>
-          <div class="fail scenario-stats" data-status="failed"><span class="value">1</span></div>
-          <div class="pass scenario-stats" data-status="passed"><span class="value">0</span></div>
+          <div class="fail scenario-stats" data-status="failed"><span class="value">0</span></div>
+          <div class="pass scenario-stats" data-status="passed"><span class="value">1</span></div>
           <div class="skip scenario-stats" data-status="skipped"><span class="value">0</span></div>
       </div>
     </div>
@@ -63,15 +63,15 @@
         
         <li>
           <label>Success Rate </label>
-          <span>0%</span>
+          <span>100%</span>
         </li>
         <li>
           <label>Total Time </label>
-          <span>00:00:35</span>
+          <span>00:00:04</span>
         </li>
         <li>
           <label>Generated On </label>
-          <span>Sep 11, 2020 at 12:31am</span>
+          <span>Sep 16, 2020 at 11:09am</span>
         </li>
       </ul>
       
@@ -106,11 +106,11 @@
         <ul id="scenarios" class="spec-list">
         
           <a href="Email.html">
-            
-              <li class='failed spec-name'>
+             
+              <li class='passed spec-name'>
             
               <span id="scenarioName" class="scenarioname">Specification Heading</span>
-              <span id="time" class="time">00:00:33</span>
+              <span id="time" class="time">00:00:04</span>
             </li>
           </a>
           
@@ -128,8 +128,8 @@
         <h3 class="spec-head" title="/Users/sahabt/Desktop/aegon-Api/specs/Email.spec">Specification Heading</h3>
         <div class="hidden report_test-results" alt="Scenarios" title="Scenarios">
           <ul>
-            <li class="fail"><span class="value">1</span><span class="txt">Failed</span></li>
-            <li class="pass"><span class="value">0</span><span class="txt">Passed</span></li>
+            <li class="fail"><span class="value">0</span><span class="txt">Failed</span></li>
+            <li class="pass"><span class="value">1</span><span class="txt">Passed</span></li>
             <li class="skip"><span class="value">0</span><span class="txt">Skipped</span></li>
           </ul>
         </div>
@@ -142,7 +142,7 @@
               <i class="fa fa-clipboard" aria-hidden="true" title="Copy to Clipboard"></i>
           </button>
         </div>
-        <span class="time">00:00:33</span>
+        <span class="time">00:00:04</span>
       </div>
 
 	
@@ -173,15 +173,22 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       
         
 	
-  <div class='scenario-container failed'>
+  <div class='scenario-container passed'>
     
 
 	
   <div class="scenario-head">
     <h3 class="head borderBottom">Email</h3>
-    <span class="time">00:00:33</span>
+    <span class="time">00:00:04</span>
 
 	
+  
+    <div class="tags scenario_tags contentSection">
+      <strong>Tags:</strong>
+      
+        <span> Email</span>
+      
+    </div>
   
 
 	</div>
@@ -197,16 +204,22 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
   
     
   
+    <span></span>
+  
+
+  
+    
+  
     
   
   <div class='step'>
   
   
     <h5 class='execution-time'>
-      <span class='time'>Execution Time : 00:00:33</span>
+      <span class='time'>Execution Time : 00:00:04</span>
     </h5>
   
-  <div class='step-info failed'>
+  <div class='step-info passed'>
   
   <ul>
     <li class='step'>
@@ -235,20 +248,6 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
   </div>
 
   
-    
-        
-  <div class="error-container failed">
-    <div class="exception-container">
-      <div class="exception">
-        <h4 class="error-message">
-          <pre>java.lang.AssertionError: <br/>Beklenmeyen StatusCode Lütfen logu inceleyin</pre>
-        </h4>
-        <pre class="stacktrace">org.junit.Assert.fail(Assert.java:88)<br/>StepImplementation.Email(StepImplementation.java:156)<br/>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>java.lang.reflect.Method.invoke(Method.java:498)<br/>com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:38)<br/>com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:74)<br/>com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:67)<br/>com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:49)<br/>com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:24)<br/>com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:43)<br/>com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:29)<br/>com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:39)<br/>com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:91)<br/>com.thoughtworks.gauge.GaugeRuntime.dispatchMessages(GaugeRuntime.java:105)<br/>com.thoughtworks.gauge.GaugeRuntime.access$100(GaugeRuntime.java:37)<br/>com.thoughtworks.gauge.GaugeRuntime$2.run(GaugeRuntime.java:86)<br/>java.lang.Thread.run(Thread.java:748)<br/></pre>
-      </div>
-      
-    </div>
-  </div>
-
     
     
   

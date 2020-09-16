@@ -31789,3 +31789,180 @@ Koşulan senaryo= 31
 Pass= 29
 Fail= 2
 2020-09-14 13:02:30 INFO  mail:82 sendReport - Mail başarılı bir şekilde gönderildi
+2020-09-15 13:51:04 INFO  Reflections:232 scan - Reflections took 5640 ms to scan 88 urls, producing 14918 keys and 85852 values 
+2020-09-15 13:51:05 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Collection apllicationId is Already taken-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-15 13:51:05 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-15 13:51:05 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-15 13:51:05 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-15 13:51:07 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Bu siparis numarasi ile zaten basarili bir siparis var.",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": "99"
+    }
+} 
+Response Time= 1214ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-15 13:51:07 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-15 13:51:07 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-15 13:51:07 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-15 13:51:07 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-15 13:59:00 INFO  Reflections:232 scan - Reflections took 5945 ms to scan 88 urls, producing 14918 keys and 85852 values 
+2020-09-15 13:59:01 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Collection apllicationId is Already taken-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-15 13:59:01 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-15 13:59:01 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-15 13:59:01 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-15 13:59:02 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Bu siparis numarasi ile zaten basarili bir siparis var.",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": "99"
+    }
+} 
+Response Time= 1051ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-15 13:59:02 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-15 13:59:02 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-15 13:59:02 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-15 13:59:02 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-15 18:52:39 INFO  Reflections:232 scan - Reflections took 6000 ms to scan 88 urls, producing 14918 keys and 85852 values 
+2020-09-15 18:52:40 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Collection amount 0-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-15 18:52:40 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-15 18:52:40 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-15 18:52:40 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-15 18:52:42 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": null,
+    "header": {
+        "message": "Sifir (0) satis ve preauth islemleri icin gecerli tutar olamaz.",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": "99"
+    }
+} 
+Response Time= 893ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-15 18:52:42 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-15 18:52:42 INFO  StepImplementation:523 compare - ignoreThePath Stringinde bir deger bulunamadı.
+2020-09-15 18:52:42 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-15 18:52:42 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-15 19:49:40 INFO  Reflections:232 scan - Reflections took 5599 ms to scan 88 urls, producing 14918 keys and 85852 values 
+2020-09-15 19:49:41 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Email-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-15 19:49:41 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 01:10:48 INFO  Reflections:232 scan - Reflections took 5602 ms to scan 88 urls, producing 14918 keys and 85852 values 
+2020-09-16 01:10:50 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Email-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 01:10:50 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 01:12:19 INFO  Reflections:232 scan - Reflections took 5343 ms to scan 88 urls, producing 14918 keys and 85852 values 
+2020-09-16 01:12:20 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Email-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 01:12:20 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 01:12:20 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 01:12:20 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 01:12:51 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "timestamp": "2020-09-15",
+    "message": "status 500 reading IysServiceFeign#checkPermission(PermissionCheckRequest)",
+    "details": "uri=/",
+    "errorCode": 0
+} 
+Response Time= 30709ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 01:12:51 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...
+2020-09-16 11:09:28 INFO  Reflections:232 scan - Reflections took 8307 ms to scan 88 urls, producing 14918 keys and 85852 values 
+2020-09-16 11:09:29 INFO  BaseTest:25 beforeScenario - 
++++++++++++++++++ Scenario Name +++++++++++++++++
+
+--------------Email-----------------
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 11:09:29 INFO  BaseTest:30 beforeScenario - local koşum
+2020-09-16 11:09:29 INFO  StepImplementation:477 sendThePost - Post is sending... 
+2020-09-16 11:09:29 INFO  StepImplementation:478 sendThePost - 
+************************  Post  ************************
+2020-09-16 11:09:32 INFO  StepImplementation:484 sendThePost - 
++++++++++++++++++ Response +++++++++++++++++
+
+ {
+    "data": {
+        "resultCode": 1,
+        "resultMessage": "OK",
+        "messageId": "d77da1bc-4ddc-40c6-b8a3-ac3800b7e4c9",
+        "totalCount": 1,
+        "successCount": 1
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": [
+            
+        ]
+    }
+} 
+Response Time= 1633ms
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2020-09-16 11:09:32 INFO  StepImplementation:493 compare - ********Response ile beklenen Response Karşılaştırılıyor********
+2020-09-16 11:09:32 INFO  StepImplementation:499 compare - ignoreThePath stringinde yer alan pahtlar karşılaştırılmıyor...
+2020-09-16 11:09:32 INFO  StepImplementation:526 compare - Karşılaştırma tamamlandı ve hata mesajı düzenlendi.
+2020-09-16 11:09:32 INFO  StepImplementation:570 getDate - Tarih ve saat belirleniyor...

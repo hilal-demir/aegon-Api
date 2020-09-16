@@ -1,0 +1,9 @@
+{
+    "data": null,
+    "header": {
+        "message": "Sifir (0) satis ve preauth islemleri icin gecerli tutar olamaz.",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": "99"
+    }
+}

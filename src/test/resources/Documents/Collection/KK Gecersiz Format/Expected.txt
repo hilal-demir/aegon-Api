@@ -1,0 +1,9 @@
+{
+    "data": null,
+    "header": {
+        "message": "Kredi karti numarasi gecerli formatta degil.",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": "99"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "data": null,
+    "header": {
+        "message": null,
+        "status": "WARNING",
+        "statusCode": 0,
+        "detailCode": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.aegon.cnf.support.rest.dto.ServiceResponse<com.aegon.blacklist.model.response.BlackScanResponse>> com.aegon.blacklist.controller.BlackListController.getBlacklistFromBlackScan(com.aegon.blacklist.model.request.BlackScanRequest): [Field error in object 'blackScanRequest' on field 'salt': rejected value []; codes [Pattern.blackScanRequest.salt,Pattern.salt,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [blackScanRequest.salt,salt]; arguments []; default message [salt],[Ljavax.validation.constraints.Pattern$Flag;@58f634a7,T|G]; default message [Salt should be either 'T' or 'G']] ",
+        "txId": null,
+        "info": []
+    }
+}

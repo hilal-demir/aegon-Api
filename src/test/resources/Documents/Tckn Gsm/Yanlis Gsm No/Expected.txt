@@ -1,0 +1,10 @@
+{
+    "result": {
+        "dogrulamaSonuc": false
+    },
+    "header": {
+        "message": "İşlem Başarılı",
+        "statusCode": 200,
+        "detailCode": "0"
+    }
+}

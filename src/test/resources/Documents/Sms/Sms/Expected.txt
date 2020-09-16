@@ -1,0 +1,20 @@
+{
+    "data": {
+        "id": 621,
+        "Results": [
+            {
+                "MessageID": "9D98F773879A4495BB6476C0ECDD5610",
+                "Status": "0"
+            }
+        ],
+        "Error": "0"
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": []
+    }
+}

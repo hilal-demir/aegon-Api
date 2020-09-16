@@ -1,0 +1,8 @@
+{
+    "result": null,
+    "header": {
+        "message": "\"A PDF file for the given personalIdNumber \\\"17222447278\\\", polId \\\"2223524\\\", insuranceSlug \\\"5-5-odullu-birikim\\\" and pdfTypeSlug \\\"03-basvuru-formu\\\" already exists. Please update it instead of creating a new one.\"",
+        "statusCode": 500,
+        "detailCode": "500"
+    }
+}

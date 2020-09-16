@@ -1,0 +1,9 @@
+{
+    "data": null,
+    "header": {
+        "message": "Bu siparis numarasi ile zaten basarili bir siparis var.",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": "99"
+    }
+}

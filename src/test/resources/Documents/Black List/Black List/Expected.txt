@@ -1,0 +1,14 @@
+{
+    "data": {
+        "result": "PASS",
+        "error": ""
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": []
+    }
+}

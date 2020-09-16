@@ -1,1 +1,1 @@
-var index = {"Tags":{},"Specs":{"Specification Heading":["specs/Send Mail.html"]}};
+var index = {"Tags":{"Email":["specs/Email.html"]},"Specs":{"Specification Heading":["specs/Email.html"]}};

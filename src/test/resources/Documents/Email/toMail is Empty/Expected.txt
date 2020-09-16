@@ -1,0 +1,17 @@
+{
+    "data": {
+        "resultCode": 1,
+        "resultMessage": null,
+        "messageId": null,
+        "totalCount": 1,
+        "successCount": 1
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": []
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "data": {
+        "resultCode": 1,
+        "resultMessage": "OK",
+        "messageId": "99dc131d-7fb0-430d-bcba-ac30016b86b3",
+        "totalCount": 1,
+        "successCount": 1
+    },
+    "header": {
+        "message": null,
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "detailCode": null,
+        "txId": null,
+        "info": []
+    }
+}

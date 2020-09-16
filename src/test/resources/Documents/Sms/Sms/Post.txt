@@ -1,0 +1,7 @@
+{
+  "application": "aegon-sales",
+  "campaign": "test_islemi",
+  "content": "Test",
+  "mobileNumber": "5415134999",
+  "polid": ""
+}

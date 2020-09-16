@@ -1,0 +1,43 @@
+{
+    "data": {
+        "agency": null,
+        "user": {
+            "id": "d9cdd7eb-7c26-49ef-9be0-690080c1aeef",
+            "nickName": null,
+            "registryNumber": "11111",
+            "name": "",
+            "surname": "",
+            "tck": "",
+            "phoneNumber": "",
+            "photoUrl": "emakin.aegon.com.tr/file/",
+            "salesChannel": "Outsource",
+            "areaGroup": null,
+            "area": "ANALİZ VE PROJE YÖNETİMİ",
+            "branch": "İŞ ANALİZİ VE PROJE YÖNETİMİ",
+            "team": "İŞ ANALİZİ VE PROJE YÖNETİMİ",
+            "subTeam": "İŞ ANALİZİ VE PROJE YÖNETİMİ",
+            "title": "UZMAN 2",
+            "role": "",
+            "managerTCK": {
+                "string": [
+                    "63172415560",
+                    "44719866892",
+                    "52678168520"
+                ]
+            },
+            "startDate": "2016-07-27T21:00:00.000+0000",
+            "endDate": null,
+            "phoneNumbers": null,
+            "segem": "0",
+            "tobb": "false",
+            "active": true,
+            "email": "a.b@aegon.com.tr"
+        },
+        "message": null
+    },
+    "header": {
+        "message": "İşlem Başarılı",
+        "statusCode": 200,
+        "detailCode": "0"
+    }
+}
