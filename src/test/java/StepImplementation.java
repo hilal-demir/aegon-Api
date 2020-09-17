@@ -495,16 +495,16 @@ public class StepImplementation {
         logger.info("********Response ile beklenen Response Karşılaştırılıyor********");
         JSONCompareResult result =
                 JSONCompare.compareJSON(expectedResponse, response, JSONCompareMode.STRICT);
-
+        String matris[]=result.toString()
+                .replaceAll(" ","")
+                .replaceAll(";","")
+                .split("\n");
         if(ignoreThePath != null && !ignoreThePath.isEmpty()){
 
             logger.info("ignoreThePath stringinde yer alan pahtlar karşılaştırılmıyor...");
 
             String ignore[]=ignoreThePath.split("#");
-            String matris[]=result.toString()
-                    .replaceAll(" ","")
-                    .replaceAll(";","")
-                    .split("\n");
+
             //ignore edilecek pathler mesajdan siliniyor
             for(int i=0;i<matris.length;i++){
                 for(int j=0;j<ignore.length;j++){
@@ -517,27 +517,28 @@ public class StepImplementation {
                     }
                 }
             }
-            //null ve "null" farklı oldugu için aşagıdaki işleme gerek duyuldu
-            for(int i=0;i<matris.length;i++){
-                for(int j=0;j<ignore.length;j++){
-                    if(matris[i].contains("null")&&matris[i+1].contains("null")){
-                        matris[i-1]="";
-                        matris[i]="";
-                        matris[i+1]="";
-                        i=i+2;
-                        break;
-                    }
-                }
-            }
 
-            for(int i=0;i<matris.length;i++){
 
-                errorMessage=errorMessage+matris[i]+"\n";
-            }
         } else{
             logger.info("ignoreThePath Stringinde bir deger bulunamadı.");
-            errorMessage=result.toString();
         }
+        //null ve "null" farklı oldugu için aşagıdaki işleme gerek duyuldu
+        for(int i=0;i<matris.length;i++){
+
+            if(matris[i].contains("null")&&matris[i+1].contains("null")){
+                matris[i-1]="";
+                matris[i]="";
+                matris[i+1]="";
+                i=i+2;
+                break;
+            }
+
+        }
+        for(int i=0;i<matris.length;i++){
+
+            errorMessage=errorMessage+matris[i]+"\n";
+        }
+
         logger.info("Karşılaştırma tamamlandı ve hata mesajı düzenlendi.");
         error=!errorMessage.replaceAll(" ","").
         replaceAll("\n","").isEmpty();
