@@ -49,9 +49,11 @@ public class jsonEditor {
         }catch (JSONException err){
             System.out.println("Error "+ err.toString());
         }
+        System.out.println("--before---------js="+js);
 
         if(path.length==1){
             js.put(path[0],value);
+            System.out.println("--after---------js="+js);
         }
         else if(path.length==2){
             js.getJSONObject(path[0]).put(path[1],value);
