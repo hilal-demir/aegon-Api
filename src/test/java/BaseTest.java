@@ -28,6 +28,8 @@ public class BaseTest {
             "\n+++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n\n");
         if (StringUtils.isEmpty(System.getenv("key"))) {
             logger.info("local koşum");
+            expectedChanges[0][0]="result.dogrulamaSonuc";
+            expectedChanges[0][1]="true";
 
         } else {
             //Testinium üzerinden yapılan değişşiklikler güncelleniyor
@@ -50,8 +52,10 @@ public class BaseTest {
         changesNames=changes.split(",");
 
         for (int i=0; i<changesNames.length;i++){
-            postChanges[i][1]=System.getenv(changesNames[i].replaceAll(" ",""));
-            postChanges[i][0]=changesNames[i].replaceAll(" ","");
+            postChanges[i][1]=System.getenv(changesNames[i]
+                    .replaceAll(" ","").replaceAll("\t",""));
+            postChanges[i][0]=changesNames[i]
+                    .replaceAll(" ","").replaceAll("\t","");
         }
 
         int i=0;
@@ -80,8 +84,12 @@ public class BaseTest {
         changesNames=changes.split(",");
 
         for (int i=0; i<changesNames.length;i++){
-            expectedChanges[i][1]=System.getenv(changesNames[i].replaceAll(" ",""));
-            expectedChanges[i][0]=changesNames[i].replaceAll(" ","");
+            expectedChanges[i][1]=System.getenv(changesNames[i]
+                    .replaceAll(" ","").replaceAll("\t",""));
+
+            expectedChanges[i][0]=changesNames[i]
+                    .replaceAll(" ","").replaceAll("\t","");
+
         }
 
         int i=0;
