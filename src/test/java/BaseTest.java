@@ -53,9 +53,9 @@ public class BaseTest {
 
         for (int i=0; i<changesNames.length;i++){
             postChanges[i][1]=System.getenv(changesNames[i])
-                    .replaceAll(" ","").replaceAll("\t","");
+                    .replaceAll(" ","");
             postChanges[i][0]=changesNames[i]
-                    .replaceAll(" ","").replaceAll("\t","");
+                    .replaceAll(" ","");
         }
 
         int i=0;
