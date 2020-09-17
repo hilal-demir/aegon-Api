@@ -42,13 +42,14 @@ public class BaseTest {
     public void setChangesForPost(){
         String changes;
         String changesNames[];
+        logger.info("PostChanges için veriler alınıyor...");
+
         changes= System.getenv("PostChanges");
         if(changes==null){
             logger.info("PostChanges için değişiklik yapılacak bir degişken bulunamadı");
             return;
         }
-        logger.info("PostChanges için veriler alınıyor.");
-
+        System.out.println("degişiklikler-----------------"+changes);
         changesNames=changes.split(",");
 
         for (int i=0; i<changesNames.length;i++){
