@@ -38,9 +38,8 @@ public class StepImplementation {
 
         Response r=sendThePost(post,"https://service-test.aegon.com.tr/sales/aegon-userinfo/userinfo");
 
-         expectedStatusCode=equalsWhat(expectedResponse,"statusCode")
-        .replaceAll(" ","");
-        actualStatusCode=String.valueOf(r.statusCode());
+        expectedStatusCode=jsonEditor.getValueOfPath("header.statusCode",expectedResponse);
+        actualStatusCode=String.valueOf(r.getStatusCode());
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
@@ -71,9 +70,8 @@ public class StepImplementation {
 
         Response r=sendThePost(post,"https://service-test.aegon.com.tr/sales/aegon-tckn/kkb-findeks/verify");
 
-         expectedStatusCode=equalsWhat(expectedResponse,"statusCode")
-        .replaceAll(" ","");
-        actualStatusCode=String.valueOf(r.statusCode());
+        expectedStatusCode=jsonEditor.getValueOfPath("header.statusCode",expectedResponse);
+        actualStatusCode=String.valueOf(r.getStatusCode());
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
@@ -103,9 +101,8 @@ public class StepImplementation {
 
         Response r=sendThePost(post,"https://service-test.aegon.com.tr/sales/aegon-sms/");
 
-         expectedStatusCode=equalsWhat(expectedResponse,"statusCode")
-        .replaceAll(" ","");
-        actualStatusCode=String.valueOf(r.statusCode());
+        expectedStatusCode=jsonEditor.getValueOfPath("header.statusCode",expectedResponse);
+        actualStatusCode=String.valueOf(r.getStatusCode());
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
@@ -135,9 +132,8 @@ public class StepImplementation {
 
         Response r=sendThePost(post,"https://service-test.aegon.com.tr/sales/aegon-email/");
 
-         expectedStatusCode=equalsWhat(expectedResponse,"statusCode")
-        .replaceAll(" ","");
-        actualStatusCode=String.valueOf(r.statusCode());
+        expectedStatusCode=jsonEditor.getValueOfPath("header.statusCode",expectedResponse);
+        actualStatusCode=String.valueOf(r.getStatusCode());
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
@@ -170,9 +166,8 @@ public class StepImplementation {
 
         Response r=sendThePost(post,"https://service-test.aegon.com.tr/sales/aegon-tckn/kkb-findeks/verify");
 
-        expectedStatusCode=equalsWhat(expectedResponse,"statusCode")
-                .replaceAll(" ","");
-        actualStatusCode=String.valueOf(r.statusCode());
+        expectedStatusCode=jsonEditor.getValueOfPath("header.statusCode",expectedResponse);
+        actualStatusCode=String.valueOf(r.getStatusCode());
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
@@ -206,10 +201,8 @@ public class StepImplementation {
 
         Response r=sendThePost(post,"https://service-test.aegon.com.tr/sales/aegon-presales-collection/collect");
 
-         expectedStatusCode=equalsWhat(expectedResponse,"statusCode")
-        .replaceAll(" ","");
-
-        actualStatusCode=String.valueOf(r.statusCode());
+        expectedStatusCode=jsonEditor.getValueOfPath("header.statusCode",expectedResponse);
+        actualStatusCode=String.valueOf(r.getStatusCode());
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
@@ -243,10 +236,8 @@ public class StepImplementation {
 
         Response r=sendThePost(post,"https://service-test.aegon.com.tr/sales/aegon-customer-address/address-information");
 
-        expectedStatusCode=equalsWhat(expectedResponse,"statusCode")
-                .replaceAll(" ","");
-
-        actualStatusCode=String.valueOf(r.statusCode());
+        expectedStatusCode=jsonEditor.getValueOfPath("header.statusCode",expectedResponse);
+        actualStatusCode=String.valueOf(r.getStatusCode());
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
@@ -280,10 +271,8 @@ public class StepImplementation {
 
         Response r=sendThePost(post,"https://service-test.aegon.com.tr/sales/aegon-mernis/birlesik-sorgulama");
 
-        expectedStatusCode=equalsWhat(expectedResponse,"statusCode")
-                .replaceAll(" ","");
-
-        actualStatusCode=String.valueOf(r.statusCode());
+        expectedStatusCode=jsonEditor.getValueOfPath("header.statusCode",expectedResponse);
+        actualStatusCode=String.valueOf(r.getStatusCode());
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
@@ -317,10 +306,8 @@ public class StepImplementation {
 
         Response r=sendThePost(post,"https://service-test.aegon.com.tr/sales/aegon-total-assurance/");
 
-        expectedStatusCode=equalsWhat(expectedResponse,"statusCode")
-                .replaceAll(" ","");
-
-        actualStatusCode=String.valueOf(r.statusCode());
+        expectedStatusCode=jsonEditor.getValueOfPath("header.statusCode",expectedResponse);
+        actualStatusCode=String.valueOf(r.getStatusCode());
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
@@ -354,10 +341,8 @@ public class StepImplementation {
 
         Response r=sendThePost(post,"https://service-test.aegon.com.tr/sales/aegon-purchase-documents/application-form/pdf");
 
-        expectedStatusCode=equalsWhat(expectedResponse,"statusCode")
-                .replaceAll(" ","");
-
-        actualStatusCode=String.valueOf(r.statusCode());
+        expectedStatusCode=jsonEditor.getValueOfPath("header.statusCode",expectedResponse);
+        actualStatusCode=String.valueOf(r.getStatusCode());
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
@@ -391,11 +376,9 @@ public class StepImplementation {
 
         Response r=sendThePost(post,"https://service-test.aegon.com.tr/sales/aegon-blacklist/query");
 
-        expectedStatusCode=equalsWhat(expectedResponse,"statusCode")
-                .replaceAll(" ","");
+        expectedStatusCode=jsonEditor.getValueOfPath("header.statusCode",expectedResponse);
+        actualStatusCode=String.valueOf(r.getStatusCode());
 
-        actualStatusCode=equalsWhat(expectedResponse,"statusCode")
-                .replaceAll(" ","");
         // status kod aşagıdaki konnda yanlış çekildigi için yukarıdeki koda geçildi
 //        actualStatusCode=String.valueOf(r.statusCode());
 
@@ -545,7 +528,7 @@ public class StepImplementation {
     }
 
     public static String equalsWhat(String text,String constant){
-        System.out.println(constant+" Degerini jsonda karşılıgı aranıyor");
+        System.out.println(constant+" Degerini jsonda karşılıgı aranıyor\n");
         String equals=null;
         String s=text;
 

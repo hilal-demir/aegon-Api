@@ -28,15 +28,15 @@ public class jsonEditor {
                 "        \"info\": []\n" +
                 "    }\n" +
                 "}";
-        JSONObject js = null;
-        try {
-            js = new JSONObject(s);
-        }catch (JSONException err){
-            System.out.println("Error "+ err.toString());
-        }
+//        JSONObject js = null;
+//        try {
+//            js = new JSONObject(s);
+//        }catch (JSONException err){
+//            System.out.println("Error "+ err.toString());
+//        }
 
       //  updateTheValue("data.Results","",js);
-
+     //   System.out.println(getValueOfPath("header.statusCode",s));
 
     }
     public String updateTheValue(String pathOfValue, String value, String jsText){
@@ -72,5 +72,35 @@ public class jsonEditor {
 
         return js.toString();
 
+    }
+    public static String getValueOfPath(String pathOfValue, String jsText){
+        //Bu method belli bir pathe göre json dosyası içersinden veri almaya yarar
+        //eger verilen yol bir köşeli parantez içersine giriyorsa çalışmaz
+        JSONObject js = null;
+        String[] path=pathOfValue.trim().split("\\.");
+        String result=null;
+        try {
+            js = new JSONObject(jsText);
+        }catch (JSONException err){
+            System.out.println("Error "+ err.toString());
+        }
+
+        if(path.length==1){
+            result=js.getString(path[0]);
+        }
+        else if(path.length==2){
+            result=js.getJSONObject(path[0]).getString(path[1]);
+        }
+        else if(path.length==3){
+            result=js.getJSONObject(path[0]).getJSONObject(path[1]).getString(path[2]);
+        }
+        else if(path.length==4){
+            result=js.getJSONObject(path[0]).getJSONObject(path[1]).getJSONObject(path[2]).getString(path[3]);
+        }
+        else {
+            Assert.fail("Bulunamayan path="+pathOfValue+" path beklenenden uzun ");
+        }
+        System.out.println(pathOfValue+" pahtinde agaran değer "+result+" olarak bulundu");
+        return result;
     }
 }

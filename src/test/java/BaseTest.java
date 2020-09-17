@@ -28,8 +28,6 @@ public class BaseTest {
             "\n+++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n\n");
         if (StringUtils.isEmpty(System.getenv("key"))) {
             logger.info("local koşum");
-            expectedChanges[0][0]="result.dogrulamaSonuc";
-            expectedChanges[0][1]="true";
 
         } else {
             //Testinium üzerinden yapılan değişşiklikler güncelleniyor
@@ -103,10 +101,28 @@ public class BaseTest {
     }
 
     public static void main(String[] args) {
-        String s=" testZZzzLL ";
-        String[] path=s.trim().split("ZZ");
-        System.out.println(path[0]);
-        System.out.println(path[1]);
+        String s="{\n" +
+                "    \"data\": {\n" +
+                "        \"id\": 643,\n" +
+                "        \"Results\": [\n" +
+                "            {\n" +
+                "                \"MessageID\": \"\",\n" +
+                "                \"Status\": \"-303\"\n" +
+                "            }\n" +
+                "        ],\n" +
+                "        \"Error\": \"0\"\n" +
+                "    },\n" +
+                "    \"header\": {\n" +
+                "        \"message\": null,\n" +
+                "        \"status\": \"SUCCESS\",\n" +
+                "        \"statusCode\": 200,\n" +
+                "        \"detailCode\": null,\n" +
+                "        \"txId\": null,\n" +
+                "        \"info\": []\n" +
+                "    }\n" +
+                "}";
+        JSONObject js=new JSONObject(s);
+        System.out.println(js.getString("data"));
 
 
 
