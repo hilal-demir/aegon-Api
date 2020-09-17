@@ -1,4 +1,6 @@
 import org.junit.Assert;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -7,6 +9,7 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class txtEditor {
+    private Logger logger = LoggerFactory.getLogger(getClass());
 
     public String getPost(String scenarioName,String scenarioType){
         String data="";
@@ -47,7 +50,14 @@ public class txtEditor {
             Assert.fail(filePath+" pathinde bir dosya bulunamadı"+ e);
         }
 
-        return doTheChanges(post,BaseTest.expectedChanges);
+        post=doTheChanges(post,BaseTest.expectedChanges);
+
+        logger.info(
+                "\n\n\n\n+++++++++++++++++ Expexted Response +++++++++++++++++\n"+
+                        "\n--------------"+post+"-----------------\n"+
+                        "\n+++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n\n");
+
+        return post;
     }
 
     public String doTheChanges(String js, String[][] changes){
