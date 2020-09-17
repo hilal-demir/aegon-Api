@@ -43,7 +43,7 @@ public class StepImplementation {
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
-            errorMessage="Beklenmeyen StatusCode Lütfen logu inceleyin";
+            errorMessage="Expected StatusCode ="+expectedStatusCode+"Actual StatusCode= "+actualStatusCode;
         } else{
             compare(r.prettyPrint(),expectedResponse,ignoreThePath);
         }
@@ -54,7 +54,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n"+errorMessage);
+            Assert.fail("\n*****"+errorMessage+"\n*****");
         }
 
     }
@@ -75,16 +75,15 @@ public class StepImplementation {
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
-            errorMessage="Beklenmeyen StatusCode Lütfen logu inceleyin";
+            errorMessage="Expected StatusCode ="+expectedStatusCode+"Actual StatusCode= "+actualStatusCode;
         } else{
-            System.out.println("expected responseeee"+expectedResponse);
             compare(r.prettyPrint(),expectedResponse,ignoreThePath);
         }
 
         googleExel.fillExcel(BaseTest.scenarioName,getDate(),getPostVariableForExcel(post,postForExcel),expectedStatusCode,actualStatusCode,errorMessage,equalsWhat(r.prettyPrint(),"message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n"+errorMessage);
+            Assert.fail("\n*****"+errorMessage+"\n*****");
         }
 
     }
@@ -106,16 +105,15 @@ public class StepImplementation {
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
-            errorMessage="Beklenmeyen StatusCode Lütfen logu inceleyin";
+            errorMessage="Expected StatusCode ="+expectedStatusCode+"Actual StatusCode= "+actualStatusCode;
         } else{
-            System.out.println("expected responseeee"+expectedResponse);
             compare(r.prettyPrint(),expectedResponse,ignoreThePath);
         }
 
         googleExel.fillExcel(BaseTest.scenarioName,getDate(),getPostVariableForExcel(post,postForExcel),expectedStatusCode,actualStatusCode,errorMessage,equalsWhat(r.prettyPrint(),"message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n"+errorMessage);
+            Assert.fail("\n*****"+errorMessage+"\n*****");
         }
 
     }
@@ -137,9 +135,8 @@ public class StepImplementation {
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
-            errorMessage="Beklenmeyen StatusCode Lütfen logu inceleyin";
+            errorMessage="Expected StatusCode ="+expectedStatusCode+"Actual StatusCode= "+actualStatusCode;
         } else{
-            System.out.println("expected responseeee"+expectedResponse);
             compare(r.prettyPrint(),expectedResponse,ignoreThePath);
         }
 
@@ -149,7 +146,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n"+errorMessage);
+            Assert.fail("\n*****"+errorMessage+"\n*****");
         }
 
     }
@@ -171,9 +168,8 @@ public class StepImplementation {
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
-            errorMessage="Beklenmeyen StatusCode Lütfen logu inceleyin";
+            errorMessage="Expected StatusCode ="+expectedStatusCode+"Actual StatusCode= "+actualStatusCode;
         } else{
-            System.out.println("expected responseeee"+expectedResponse);
             compare(r.prettyPrint(),expectedResponse,ignoreThePath);
         }
 
@@ -183,7 +179,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n"+errorMessage);
+            Assert.fail("\n*****"+errorMessage+"\n*****");
         }
 
     }
@@ -206,9 +202,8 @@ public class StepImplementation {
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
-            errorMessage="Beklenmeyen StatusCode Lütfen logu inceleyin";
+            errorMessage="Expected StatusCode ="+expectedStatusCode+"Actual StatusCode= "+actualStatusCode;
         } else{
-            System.out.println("expected responseeee"+expectedResponse);
             compare(r.prettyPrint(),expectedResponse,ignoreThePath);
         }
 
@@ -218,7 +213,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n"+errorMessage);
+            Assert.fail("\n*****"+errorMessage+"\n*****");
         }
 
     }
@@ -241,9 +236,8 @@ public class StepImplementation {
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
-            errorMessage="Beklenmeyen StatusCode Lütfen logu inceleyin";
+            errorMessage="Expected StatusCode ="+expectedStatusCode+"Actual StatusCode= "+actualStatusCode;
         } else{
-            System.out.println("expected responseeee"+expectedResponse);
             compare(r.prettyPrint(),expectedResponse,ignoreThePath);
         }
 
@@ -253,7 +247,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n"+errorMessage);
+            Assert.fail("\n*****"+errorMessage+"\n*****");
         }
 
     }
@@ -276,9 +270,8 @@ public class StepImplementation {
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
-            errorMessage="Beklenmeyen StatusCode Lütfen logu inceleyin";
+            errorMessage="Expected StatusCode ="+expectedStatusCode+"Actual StatusCode= "+actualStatusCode;
         } else{
-            System.out.println("expected responseeee"+expectedResponse);
             compare(r.prettyPrint(),expectedResponse,ignoreThePath);
         }
 
@@ -288,7 +281,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n"+errorMessage);
+            Assert.fail("\n*****"+errorMessage+"\n*****");
         }
 
     }
@@ -311,9 +304,8 @@ public class StepImplementation {
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
-            errorMessage="Beklenmeyen StatusCode Lütfen logu inceleyin";
+            errorMessage="Expected StatusCode ="+expectedStatusCode+"Actual StatusCode= "+actualStatusCode;
         } else{
-            System.out.println("expected responseeee"+expectedResponse);
             compare(r.prettyPrint(),expectedResponse,ignoreThePath);
         }
 
@@ -323,7 +315,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n"+errorMessage);
+            Assert.fail("\n*****"+errorMessage+"\n*****");
         }
 
     }
@@ -346,9 +338,8 @@ public class StepImplementation {
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
-            errorMessage="Beklenmeyen StatusCode Lütfen logu inceleyin";
+            errorMessage="Expected StatusCode ="+expectedStatusCode+"Actual StatusCode= "+actualStatusCode;
         } else{
-            System.out.println("expected responseeee"+expectedResponse);
             compare(r.prettyPrint(),expectedResponse,ignoreThePath);
         }
 
@@ -358,7 +349,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n"+errorMessage);
+            Assert.fail("\n*****"+errorMessage+"\n*****");
         }
 
     }
@@ -384,9 +375,8 @@ public class StepImplementation {
 
         if(!expectedStatusCode.equals(actualStatusCode)){
             error=true;
-            errorMessage="Beklenmeyen StatusCode Lütfen logu inceleyin";
+            errorMessage="Expected StatusCode ="+expectedStatusCode+"Actual StatusCode= "+actualStatusCode;
         } else{
-            System.out.println("expected responseeee"+expectedResponse);
             compare(r.prettyPrint(),expectedResponse,ignoreThePath);
         }
 
@@ -396,7 +386,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n"+errorMessage);
+            Assert.fail("\n*****"+errorMessage+"\n*****");
         }
 
     }
@@ -413,8 +403,9 @@ public class StepImplementation {
         googleExel.fillExcel(
                 BaseTest.scenarioName,getDate(),"GET","200",
                 actualStatusCode,errorMessage,"",r.getTime()+"ms",error);
+
         if(error){
-            Assert.fail("\n"+errorMessage);
+            Assert.fail("\n*****"+errorMessage+"\n*****");
         }
     }
 
@@ -430,8 +421,9 @@ public class StepImplementation {
         googleExel.fillExcel(
                 BaseTest.scenarioName,getDate(),"GET","200",
                 actualStatusCode,errorMessage,"",r.getTime()+"ms",error);
+
         if(error){
-            Assert.fail("\n"+errorMessage);
+            Assert.fail("\n*****"+errorMessage+"\n*****");
         }
     }
 
@@ -528,7 +520,7 @@ public class StepImplementation {
     }
 
     public static String equalsWhat(String text,String constant){
-        System.out.println(constant+" Degerini jsonda karşılıgı aranıyor\n");
+        System.out.println(constant+" Degerini jsonda karşılıgı aranıyor...\n");
         String equals=null;
         String s=text;
 
@@ -547,7 +539,7 @@ public class StepImplementation {
         if (equals.isEmpty()){
             equals="null";
         }
-        System.out.println(constant+" Degerinin karşılıgı '"+equals+"' olarak bulundu");
+        System.out.println(constant+"="+equals+" olarak bulundu");
         return equals;
     }
 

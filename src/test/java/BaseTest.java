@@ -71,6 +71,8 @@ public class BaseTest {
     public void setChangesForExpected(){
         String changes;
         String changesNames[];
+        logger.info("ExpectedChanges için veriler alınıyor...");
+
         changes= System.getenv("ExpectedChanges");
         if(changes==null){
             logger.info("ExpectedChanges için değişiklik yapılacak bir degişken bulunamadı");
