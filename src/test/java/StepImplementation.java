@@ -521,14 +521,15 @@ public class StepImplementation {
             for(int i=0;i<matris.length;i++){
                 for(int j=0;j<ignore.length;j++){
                     if(matris[i].contains("null")&&matris[i+1].contains("null")){
+                        matris[i-1]="";
                         matris[i]="";
                         matris[i+1]="";
-                        matris[i+2]="";
                         i=i+2;
                         break;
                     }
                 }
             }
+
             for(int i=0;i<matris.length;i++){
 
                 errorMessage=errorMessage+matris[i]+"\n";
