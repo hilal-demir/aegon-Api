@@ -86,8 +86,8 @@ public class BaseTest {
 
             expectedChanges[i][1]=System.getenv(changesNames[i].trim());
 
-            expectedChanges[i][0]=changesNames[i].trim()
-                    ;
+            expectedChanges[i][0]=changesNames[i].trim();
+
 
         }
 
