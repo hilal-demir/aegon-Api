@@ -505,10 +505,22 @@ public class StepImplementation {
                     .replaceAll(" ","")
                     .replaceAll(";","")
                     .split("\n");
-
+            //ignore edilecek pathler mesajdan siliniyor
             for(int i=0;i<matris.length;i++){
                 for(int j=0;j<ignore.length;j++){
                     if(matris[i].equals(ignore[j])){
+                        matris[i]="";
+                        matris[i+1]="";
+                        matris[i+2]="";
+                        i=i+2;
+                        break;
+                    }
+                }
+            }
+            //null ve "null" farklı oldugu için aşagıdaki işleme gerek duyuldu
+            for(int i=0;i<matris.length;i++){
+                for(int j=0;j<ignore.length;j++){
+                    if(matris[i].contains("null")&&matris[i+1].contains("null")){
                         matris[i]="";
                         matris[i+1]="";
                         matris[i+2]="";
@@ -576,6 +588,7 @@ public class StepImplementation {
 
         return String.valueOf(bicim2.format(tarihSaat)).replaceAll(" ","\n");
     }
+
 }
 
 
