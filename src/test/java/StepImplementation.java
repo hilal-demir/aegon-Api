@@ -54,7 +54,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n*****"+errorMessage+"\n*****");
+            Assert.fail("\n*****\n"+errorMessage+"\n*****");
         }
 
     }
@@ -83,7 +83,7 @@ public class StepImplementation {
         googleExel.fillExcel(BaseTest.scenarioName,getDate(),getPostVariableForExcel(post,postForExcel),expectedStatusCode,actualStatusCode,errorMessage,equalsWhat(r.prettyPrint(),"message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n*****"+errorMessage+"\n*****");
+            Assert.fail("\n*****\n"+errorMessage+"\n*****");
         }
 
     }
@@ -113,7 +113,7 @@ public class StepImplementation {
         googleExel.fillExcel(BaseTest.scenarioName,getDate(),getPostVariableForExcel(post,postForExcel),expectedStatusCode,actualStatusCode,errorMessage,equalsWhat(r.prettyPrint(),"message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n*****"+errorMessage+"\n*****");
+            Assert.fail("\n*****\n"+errorMessage+"\n*****");
         }
 
     }
@@ -146,7 +146,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n*****"+errorMessage+"\n*****");
+            Assert.fail("\n*****\n"+errorMessage+"\n*****");
         }
 
     }
@@ -179,7 +179,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n*****"+errorMessage+"\n*****");
+            Assert.fail("\n*****\n"+errorMessage+"\n*****");
         }
 
     }
@@ -213,7 +213,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n*****"+errorMessage+"\n*****");
+            Assert.fail("\n*****\n"+errorMessage+"\n*****");
         }
 
     }
@@ -247,7 +247,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n*****"+errorMessage+"\n*****");
+            Assert.fail("\n*****\n"+errorMessage+"\n*****");
         }
 
     }
@@ -281,7 +281,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n*****"+errorMessage+"\n*****");
+            Assert.fail("\n*****\n"+errorMessage+"\n*****");
         }
 
     }
@@ -315,7 +315,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n*****"+errorMessage+"\n*****");
+            Assert.fail("\n*****\n"+errorMessage+"\n*****");
         }
 
     }
@@ -349,7 +349,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n*****"+errorMessage+"\n*****");
+            Assert.fail("\n*****\n"+errorMessage+"\n*****");
         }
 
     }
@@ -386,7 +386,7 @@ public class StepImplementation {
                         "message"),r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n*****"+errorMessage+"\n*****");
+            Assert.fail("\n*****\n"+errorMessage+"\n*****");
         }
 
     }
@@ -405,7 +405,7 @@ public class StepImplementation {
                 actualStatusCode,errorMessage,"",r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n*****"+errorMessage+"\n*****");
+            Assert.fail("\n*****\n"+errorMessage+"\n*****");
         }
     }
 
@@ -423,7 +423,7 @@ public class StepImplementation {
                 actualStatusCode,errorMessage,"",r.getTime()+"ms",error);
 
         if(error){
-            Assert.fail("\n*****"+errorMessage+"\n*****");
+            Assert.fail("\n*****\n"+errorMessage+"\n*****");
         }
     }
 
