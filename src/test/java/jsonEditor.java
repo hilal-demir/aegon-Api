@@ -41,7 +41,7 @@ public class jsonEditor {
     }
     public String updateTheValue(String pathOfValue, String value, String jsText){
         String[] path=pathOfValue.split("\\.");
-        logger.info(pathOfValue+" için update yapılıyor.");
+        logger.info(pathOfValue+" yolundaki deger ="+value+" olarak güncelleniyor");
 
         JSONObject js = null;
         try {
@@ -50,7 +50,6 @@ public class jsonEditor {
             System.out.println("Error "+ err.toString());
         }
 
-        System.out.println(path[0]);
         if(path.length==1){
             js.put(path[0],value);
         }
