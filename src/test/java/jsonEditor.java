@@ -40,7 +40,7 @@ public class jsonEditor {
 
     }
     public String updateTheValue(String pathOfValue, String value, String jsText){
-        String[] path=pathOfValue.split("-");
+        String[] path=pathOfValue.split("xxx");
         logger.info(pathOfValue+" yolundaki deger ="+value+" olarak güncelleniyor");
 
         JSONObject js = null;
