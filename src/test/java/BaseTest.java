@@ -50,7 +50,7 @@ public class BaseTest {
             return;
         }
         System.out.println("degişiklikler-----------------"+changes);
-        changesNames=changes.split(",");
+        changesNames=changes.split(" ");
 
         for (int i=0; i<changesNames.length;i++){
             postChanges[i][1]=System.getenv(changesNames[i].trim());
@@ -80,7 +80,7 @@ public class BaseTest {
         }
         logger.info("ExpectedChanges için veriler alınıyor.");
 
-        changesNames=changes.split(",");
+        changesNames=changes.split(" ");
 
         for (int i=0; i<changesNames.length;i++){
 
@@ -103,9 +103,33 @@ public class BaseTest {
     }
 
     public static void main(String[] args) {
-        String s=" test l ";
-        System.out.println(s);
+        String s=" test LL ";
+        String[] path=s.trim().split(" "+"(?=\\p{Upper})");
+        System.out.println(path[0].substring(0, 1).toLowerCase() + path[0].substring(1));
+        System.out.println(path[1].substring(0, 1).toLowerCase() + path[1].substring(1));
+
+
+        String json="{\n" +
+                "    \"dat>a\": {\n" +
+                "        \"result\": \"PASS\",\n" +
+                "        \"error\": \"\"\n" +
+                "    },\n" +
+                "    \"header\": {\n" +
+                "        \"message\": null,\n" +
+                "        \"status\": \"SUCCESS\",\n" +
+                "        \"statusCode\": 200,\n" +
+                "        \"detailCode\": null,\n" +
+                "        \"txId\": null,\n" +
+                "        \"info\": []\n" +
+                "    }\n" +
+                "}";
+        JSONObject js=new JSONObject(json);
+        js.put("dat>a","s");
+        System.out.println(js);
+
+
     }
+
 
 
 
