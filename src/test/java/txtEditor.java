@@ -47,7 +47,7 @@ public class txtEditor {
             Assert.fail(filePath+" pathinde bir dosya bulunamadı"+ e);
         }
 
-        return post;
+        return doTheChanges(post,BaseTest.expectedChanges);
     }
 
     public String doTheChanges(String js, String[][] changes){
