@@ -9,4 +9,5 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 
 Mernis
 ----------------
+tags:Mernis
 * Mernis "Mernis"

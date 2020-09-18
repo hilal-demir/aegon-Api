@@ -1,9 +1,49 @@
 {
-    "data": null,
+    "data": {
+        "maviKartCuzdanModel": null,
+        "tcKisiModelBilgi": {
+            "hata": null,
+            "ad": null,
+            "aileSiraNo": 0,
+            "anneAd": null,
+            "babaAd": null,
+            "belgeNo": null,
+            "bireySiraNo": 0,
+            "cinsiyet": null,
+            "cuzdanKayitNo": null,
+            "cuzdanNo": null,
+            "cuzdanSeri": null,
+            "cuzdanVerildigiIlce": null,
+            "cuzdanVerilmeNeden": null,
+            "cuzdanVerilmeTarih": null,
+            "dogumTarih": null,
+            "dogumYer": null,
+            "durum": null,
+            "duzenlenmeTarih": null,
+            "duzenleyenIlce": null,
+            "fotograf": null,
+            "kayitYerCilt": null,
+            "kayitYerIl": null,
+            "kayitYerIlce": null,
+            "medeniHal": null,
+            "olumTarih": null,
+            "oncekiSoyad": null,
+            "sonGecerlilikTarih": null,
+            "soyad": null,
+            "tcKimlikNo": 0,
+            "verenMakam": null,
+            "anneTCKimlikNo": 0,
+            "babaTCKimlikNo": 0,
+            "din": null,
+            "dogumYerKod": 0,
+            "esTCKimlikNo": 0
+        },
+        "ybKisiModel": null
+    },
     "header": {
-        "message": "HTTP transport error: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target",
-        "statusCode": 500,
-        "detailCode": "-1",
-        "status": "FAILURE"
+        "message": "İşlem Başarılı",
+        "statusCode": 200,
+        "detailCode": "0",
+        "status": "SUCCESS"
     }
 }
