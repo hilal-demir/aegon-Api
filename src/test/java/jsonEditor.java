@@ -51,29 +51,23 @@ public class jsonEditor {
         }catch (JSONException err){
             System.out.println("Error "+ err.toString());
         }
-        System.out.println("--before---------js="+js);
 
         if(path.length==1){
             js.put(path[0],value);
-            System.out.println(path[0]);
         }
         else if(path.length==2){
             js.getJSONObject(path[0]).put(path[1],value);
-            System.out.println(path[0]+" "+path[1]);
         }
         else if(path.length==3){
             js.getJSONObject(path[0]).getJSONObject(path[1]).put(path[2],value);
-            System.out.println(path[0]+" "+path[1]+" "+path[2]);
         }
         else if(path.length==4){
             js.getJSONObject(path[0]).getJSONObject(path[1]).getJSONObject(path[2]).put(path[3],value);
-            System.out.println(path[0]+" "+path[1]+" "+path[2]+" "+path[2]);
 
         }
         else {
             Assert.fail("Bulunamayan path="+pathOfValue+" path beklenenden uzun ");
         }
-        System.out.println("--after---------js="+js);
 
         return js.toString();
 
