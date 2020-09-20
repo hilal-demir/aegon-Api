@@ -55,7 +55,6 @@ public class jsonEditor {
 
         if(path.length==1){
             js.put(path[0],value);
-            System.out.println("--after---------js="+js);
         }
         else if(path.length==2){
             js.getJSONObject(path[0]).put(path[1],value);
@@ -69,6 +68,7 @@ public class jsonEditor {
         else {
             Assert.fail("Bulunamayan path="+pathOfValue+" path beklenenden uzun ");
         }
+        System.out.println("--after---------js="+js);
 
         return js.toString();
 
