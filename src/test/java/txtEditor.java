@@ -27,7 +27,7 @@ public class txtEditor {
         } catch (FileNotFoundException e) {
             Assert.fail(filePath+" pathinde bir dosya bulunamadı "+e);
         }
-        if(!System.getenv("AllPost").isEmpty()){
+        if(System.getenv("AllPost")!=null){
             post=System.getenv("AllPost");
             logger.info("AllPost değeri bulundu ve 'Post=AllPost' olarak güncellendi");
         }else{
@@ -57,7 +57,7 @@ public class txtEditor {
             Assert.fail(filePath+" pathinde bir dosya bulunamadı"+ e);
         }
 
-        if(!System.getenv("AllExpected").isEmpty()){
+        if(System.getenv("AllExpected")!=null){
             post=System.getenv("AllExpected");
             logger.info("AllExpected değeri bulundu ve 'Expexted Response=AllExpected' olarak güncellendi");
         } else{
