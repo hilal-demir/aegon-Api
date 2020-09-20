@@ -32,7 +32,7 @@ public class txtEditor {
             logger.info("AllPost değeri bulundu ve 'Post=AllPost' olarak güncellendi");
         }else{
             logger.info("AllPost değeri bulunamadı");
-            post=doTheChanges(post,BaseTest.expectedChanges);
+            post=doTheChanges(post,BaseTest.postChanges);
         }
 
 
