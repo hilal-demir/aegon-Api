@@ -38,95 +38,96 @@ public class BaseTest {
         }
     }
     public void setChangesForPost(){
-        String changes;
-        String changesNames[];
+//        String changes;
+//        String changesNames[];
         logger.info("PostChanges için veriler alınıyor...");
-
-        changes= System.getenv("PostChanges");
-        if(changes==null){
-            logger.info("PostChanges için değişiklik yapılacak bir degişken bulunamadı");
-            return;
-        }
-        System.out.println("degişiklikler-----------------"+changes);
-        changesNames=changes.split(",");
-
-        for (int i=0; i<changesNames.length;i++){
-            postChanges[i][1]=System.getenv(changesNames[i].trim());
-            postChanges[i][0]=changesNames[i].trim();
-        }
-
         int i=0;
-        logger.info("Testinium üzerinden post için çekilen degişiklikler;");
         while (true){
-
-            if(postChanges[i][0]==null){
+            try{
+                postChanges[i]= System.getenv("Post"+i).trim().split("=");
+                logger.info("Post"+i+" = "+ postChanges[i]+" Post için değiştirilecek değerlere eklendi");
+                i++;
+            }catch (Exception e){
                 break;
             }
-
-            System.out.println(postChanges[i][0]+"="+postChanges[i][1]);
-            i++;
         }
+
+//        changes= System.getenv("PostChanges");
+//        if(changes==null){
+//            logger.info("PostChanges için değişiklik yapılacak bir degişken bulunamadı");
+//            return;
+//        }
+//        System.out.println("degişiklikler-----------------"+changes);
+//        changesNames=changes.split(",");
+//
+//        for (int i=0; i<changesNames.length;i++){
+//            postChanges[i][1]=System.getenv(changesNames[i].trim());
+//            postChanges[i][0]=changesNames[i].trim();
+//        }
+//
+//        int i=0;
+//        logger.info("Testinium üzerinden post için çekilen degişiklikler;");
+//        while (true){
+//
+//            if(postChanges[i][0]==null){
+//                break;
+//            }
+//
+//            System.out.println(postChanges[i][0]+"="+postChanges[i][1]);
+//            i++;
+//        }
     }
 
     public void setChangesForExpected(){
-        String changes;
-        String changesNames[];
         logger.info("ExpectedChanges için veriler alınıyor...");
-
-        changes= System.getenv("ExpectedChanges");
-        if(changes==null){
-            logger.info("ExpectedChanges için değişiklik yapılacak bir degişken bulunamadı");
-            return;
-        }
-        logger.info("ExpectedChanges için veriler alınıyor.");
-
-        changesNames=changes.split(",");
-
-        for (int i=0; i<changesNames.length;i++){
-
-            expectedChanges[i][1]=System.getenv(changesNames[i].trim());
-
-            expectedChanges[i][0]=changesNames[i].trim();
-
-
-        }
-
         int i=0;
-        logger.info("Testinium üzerinden expected için çekilen degişiklikler;");
         while (true){
-            if(expectedChanges[i][0]==null){
+            try{
+                expectedChanges[i]= System.getenv("Expected"+i).trim().split("=");
+                logger.info("Expected"+i+" = "+ postChanges[i]+" Expected için değiştirilecek değerlere eklendi");
+                i++;
+            }catch (Exception e){
                 break;
             }
-            System.out.println(expectedChanges[i][0]+"="+expectedChanges[i][1]);
-            i++;
         }
+//        String changes;
+//        String changesNames[];
+//        logger.info("ExpectedChanges için veriler alınıyor...");
+//
+//        changes= System.getenv("ExpectedChanges");
+//        if(changes==null){
+//            logger.info("ExpectedChanges için değişiklik yapılacak bir degişken bulunamadı");
+//            return;
+//        }
+//        logger.info("ExpectedChanges için veriler alınıyor.");
+//
+//        changesNames=changes.split(",");
+//
+//        for (int i=0; i<changesNames.length;i++){
+//
+//            expectedChanges[i][1]=System.getenv(changesNames[i].trim());
+//
+//            expectedChanges[i][0]=changesNames[i].trim();
+//
+//
+//        }
+//
+//        int i=0;
+//        logger.info("Testinium üzerinden expected için çekilen degişiklikler;");
+//        while (true){
+//            if(expectedChanges[i][0]==null){
+//                break;
+//            }
+//            System.out.println(expectedChanges[i][0]+"="+expectedChanges[i][1]);
+//            i++;
+//        }
     }
 
     public static void main(String[] args) {
-        String s="{\n" +
-                "    \"data\": {\n" +
-                "        \"id\": 643,\n" +
-                "        \"Results\": [\n" +
-                "            {\n" +
-                "                \"MessageID\": \"\",\n" +
-                "                \"Status\": \"-303\"\n" +
-                "            }\n" +
-                "        ],\n" +
-                "        \"Error\": \"0\"\n" +
-                "    },\n" +
-                "    \"header\": {\n" +
-                "        \"message\": null,\n" +
-                "        \"status\": \"SUCCESS\",\n" +
-                "        \"statusCode\": 200,\n" +
-                "        \"detailCode\": null,\n" +
-                "        \"txId\": null,\n" +
-                "        \"info\": []\n" +
-                "    }\n" +
-                "}";
-        JSONObject js=new JSONObject(s);
-        System.out.println(js.getString("data"));
-
-
+        String[][] deneme=new String[10][10];
+        String test="test=2";
+        deneme[1]=test.split("=");
+        System.out.println(deneme[1][0]+"  "+deneme[1][1]);
 
 
     }
