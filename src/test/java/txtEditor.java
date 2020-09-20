@@ -27,9 +27,18 @@ public class txtEditor {
         } catch (FileNotFoundException e) {
             Assert.fail(filePath+" pathinde bir dosya bulunamadı "+e);
         }
+        try{
+            post=System.getenv("AllPost");
+            logger.info("AllPost değeri bulundu ve 'Post=AllPost' olarak güncellendi");
+
+        }catch (Exception e){
+            logger.info("AllPost değeri bulunamadı");
+            post=doTheChanges(post,BaseTest.expectedChanges);
+
+        }
 
 
-        return doTheChanges(post,BaseTest.postChanges);
+        return post;
     }
 
     public String getExpected(String scenarioName,String scenarioType){
@@ -49,8 +58,15 @@ public class txtEditor {
             System.out.println("An error occurred.");
             Assert.fail(filePath+" pathinde bir dosya bulunamadı"+ e);
         }
+        try{
+            post=System.getenv("AllExpected");
+            logger.info("AllExpected değeri bulundu ve 'Expexted Response=AllExpected' olarak güncellendi");
 
-        post=doTheChanges(post,BaseTest.expectedChanges);
+        }catch (Exception e){
+            logger.info("AllExpected değeri bulunamadı");
+            post=doTheChanges(post,BaseTest.expectedChanges);
+
+        }
 
         logger.info(
                 "\n\n\n\n+++++++++++++++++ Expexted Response +++++++++++++++++\n"+
