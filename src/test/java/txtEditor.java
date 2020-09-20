@@ -27,14 +27,12 @@ public class txtEditor {
         } catch (FileNotFoundException e) {
             Assert.fail(filePath+" pathinde bir dosya bulunamadı "+e);
         }
-        try{
+        if(!System.getenv("AllPost").isEmpty()){
             post=System.getenv("AllPost");
             logger.info("AllPost değeri bulundu ve 'Post=AllPost' olarak güncellendi");
-
-        }catch (Exception e){
+        }else{
             logger.info("AllPost değeri bulunamadı");
             post=doTheChanges(post,BaseTest.expectedChanges);
-
         }
 
 
@@ -58,14 +56,13 @@ public class txtEditor {
             System.out.println("An error occurred.");
             Assert.fail(filePath+" pathinde bir dosya bulunamadı"+ e);
         }
-        try{
+
+        if(!System.getenv("AllExpected").isEmpty()){
             post=System.getenv("AllExpected");
             logger.info("AllExpected değeri bulundu ve 'Expexted Response=AllExpected' olarak güncellendi");
-
-        }catch (Exception e){
+        } else{
             logger.info("AllExpected değeri bulunamadı");
             post=doTheChanges(post,BaseTest.expectedChanges);
-
         }
 
         logger.info(
