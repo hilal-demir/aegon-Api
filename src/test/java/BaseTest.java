@@ -45,7 +45,7 @@ public class BaseTest {
         while (true){
             try{
                 postChanges[i]= System.getenv("Post"+i).trim().split("=");
-                logger.info("Post"+i+" = "+ postChanges[i]+" Post için değiştirilecek değerlere eklendi");
+                logger.info("Post"+i+" = "+ postChanges[i].toString()+" Post için değiştirilecek değerlere eklendi");
                 i++;
             }catch (Exception e){
                 break;
@@ -84,7 +84,7 @@ public class BaseTest {
         while (true){
             try{
                 expectedChanges[i]= System.getenv("Expected"+i).trim().split("=");
-                logger.info("Expected"+i+" = "+ postChanges[i]+" Expected için değiştirilecek değerlere eklendi");
+                logger.info("Expected"+i+" = "+ postChanges[i].toString()+" Expected için değiştirilecek değerlere eklendi");
                 i++;
             }catch (Exception e){
                 break;
