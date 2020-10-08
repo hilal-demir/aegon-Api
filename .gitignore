@@ -9,6 +9,6 @@ reports
 gauge_bin
 
 # Gauge - java class target dir
-target
+target/
 
 Test Reports
