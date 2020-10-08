@@ -1,5 +1,0 @@
-{
-  "agencyRegistryNumber": "22222",
-  "nickName": "",
-  "registryNumber": ""
-}
